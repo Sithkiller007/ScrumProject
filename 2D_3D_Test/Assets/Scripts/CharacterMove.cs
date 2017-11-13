@@ -8,14 +8,14 @@ public class CharacterMove : MonoBehaviour
     public float moveSpeed;
     public float rotateSpeed;
     public float jumpSpeed;
+    public float distance = 1f;
     public Collider other;
-    public bool onLeiter = false;
     public bool destroyable;
     public bool isGrounded;
     private Rigidbody rigidbod;
     public bool sidemove;
     public bool topmove;
-
+    public bool anWand = false;
     // Use this for initialization
     void Start()
     {
@@ -24,27 +24,20 @@ public class CharacterMove : MonoBehaviour
         /*sidemove = GameObject.Find("MainCamera").activeInHierarchy;
         topmove = GameObject.Find("TopView").activeInHierarchy;*/
     }
-
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Ladder")
+        if (other.gameObject.CompareTag("Wand"))
         {
-            onLeiter = true;
-            rigidbod.useGravity = false;
+            anWand = true;
         }
-
     }
-
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Ladder")
+        if (other.gameObject.CompareTag("Wand"))
         {
-            onLeiter = false;
-            rigidbod.useGravity = true;
+            anWand = false;
         }
-
     }
-
     void Update()
     {
         /*sidemove = GameObject.Find("MainCamera").activeInHierarchy;
@@ -62,12 +55,7 @@ public class CharacterMove : MonoBehaviour
         if (!Input.GetButton("Fire1"))
         {
             // movement
-            if (onLeiter == true)
-            {
-                transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed);
-                transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
-            }
-            else if (sidemove)
+            if (sidemove)
             {
                 //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
                 transform.Translate(new Vector3(0, 0, -h) * Time.deltaTime * moveSpeed);
@@ -78,18 +66,15 @@ public class CharacterMove : MonoBehaviour
                 transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
                 transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
             }
-
-
             // jump
+            if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
+            {
+                GetComponent<Rigidbody>().velocity = new Vector3(0,jumpSpeed,0);
+            }
+            }
             if (Input.GetButtonDown("Jump") && isGrounded && sidemove)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             }
         }
-
-        // TODO duck
-
-
     }
-}
-
