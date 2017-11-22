@@ -47,12 +47,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterMove.cs" />
+     <Compile Include="Assets\Scripts\Crouch.cs" />
+     <Compile Include="Assets\Scripts\EnemyFieldofView.cs" />
      <Compile Include="Assets\Scripts\EnemySight.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Gegner.cs" />
      <Compile Include="Assets\Scripts\Quit.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\SideCameraFollow.cs" />
      <Compile Include="Assets\Scripts\ToggleView.cs" />
+     <Compile Include="Assets\Scripts\playerAttack.cs" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>G:/Programme/Scrum Projekt/2D_3D_Test/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
