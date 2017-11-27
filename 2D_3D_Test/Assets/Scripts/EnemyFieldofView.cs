@@ -19,9 +19,13 @@ public class EnemyFieldofView : MonoBehaviour {
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
+    public GameObject excl;
+    Renderer exrend;
 
     void Start()
     {
+        exrend = excl.GetComponent<Renderer>();
+        exrend.enabled = false;
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
@@ -35,6 +39,18 @@ public class EnemyFieldofView : MonoBehaviour {
         {
             yield return new WaitForSeconds(delay);
             FindVisibleTargets();
+        }
+    }
+
+    void Update()
+    {
+        if(visibleTargets.Count != 0)
+        {
+            exrend.enabled = true;
+        }
+        else
+        {
+            exrend.enabled = false;
         }
     }
 
