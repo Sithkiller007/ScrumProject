@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterMove.cs" />
      <Compile Include="Assets\Scripts\Crouch.cs" />
+     <Compile Include="Assets\Scripts\DoorAction.cs" />
      <Compile Include="Assets\Scripts\EnemyFieldofView.cs" />
      <Compile Include="Assets\Scripts\EnemySight.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
