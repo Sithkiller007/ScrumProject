@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool topCamera;
     public Canvas inGameMenu;
     bool menuOpen = false;
+    public Text hint;
 
     void Awake()
     {
