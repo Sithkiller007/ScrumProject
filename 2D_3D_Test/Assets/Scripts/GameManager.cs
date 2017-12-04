@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Canvas inGameMenu;
     bool menuOpen = false;
     public Text hint;
+    public bool itempickedup;
 
     void Awake()
     {

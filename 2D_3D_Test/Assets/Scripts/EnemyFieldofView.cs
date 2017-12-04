@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyFieldofView : MonoBehaviour {
 
+    public AudioSource beep;
+    bool beepPlayed;
+
     public float viewRadius;
     [Range(0,360)]
     public float viewAngle;
@@ -47,10 +50,16 @@ public class EnemyFieldofView : MonoBehaviour {
         if(visibleTargets.Count != 0)
         {
             exrend.enabled = true;
+            if (!beepPlayed)
+            {
+                beep.Play();
+                beepPlayed = true;
+            }
         }
         else
         {
             exrend.enabled = false;
+            beepPlayed = false;
         }
     }
 
