@@ -12,10 +12,15 @@ public class CharacterMove : MonoBehaviour
     public Collider other;
     public bool destroyable;
     public bool isGrounded;
+    public bool onLeiter = false;
     private Rigidbody rigidbod;
     public bool sidemove;
     public bool topmove;
     public bool anWand = false;
+    public Animation l_bein;
+    public Animation r_bein;
+    public Animation l_arm;
+    public Animation r_arm;
     // Use this for initialization
     void Start()
     {
@@ -30,12 +35,22 @@ public class CharacterMove : MonoBehaviour
         {
             anWand = true;
         }
+        if (other.gameObject.tag == "Ladder")
+        {
+            onLeiter = true;
+            rigidbod.useGravity = false;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Wand"))
         {
             anWand = false;
+        }
+        if (other.gameObject.tag == "Ladder")
+        {
+            onLeiter = false;
+            rigidbod.useGravity = true;
         }
     }
     void Update()
@@ -66,11 +81,22 @@ public class CharacterMove : MonoBehaviour
                 transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
                 transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
             }
-            // jump
-            if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
+            if (onLeiter && sidemove)
             {
-                GetComponent<Rigidbody>().velocity = new Vector3(0,jumpSpeed,0);
-            }
+                transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed);
+                transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
+                while (Input.GetKeyDown("w") && onLeiter && sidemove)
+                {
+                    transform.Find("l_bein").GetComponent<Animation>().Play("l_bein");
+                    transform.Find("r_bein").GetComponent<Animation>().Play("r_bein");
+                    transform.Find("l_arm").GetComponent<Animation>().Play("l_arm");
+                    transform.Find("r_arm").GetComponent<Animation>().Play("r_arm");
+                }
+                // jump
+                if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
+                {
+                    GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
+                }
             }
             if (Input.GetButtonDown("Jump") && isGrounded && sidemove)
             {
@@ -78,3 +104,4 @@ public class CharacterMove : MonoBehaviour
             }
         }
     }
+}
