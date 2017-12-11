@@ -17,10 +17,7 @@ public class CharacterMove : MonoBehaviour
     public bool sidemove;
     public bool topmove;
     public bool anWand = false;
-    public Animation l_bein;
-    public Animation r_bein;
-    public Animation l_arm;
-    public Animation r_arm;
+    public Vector3 respawnPoint;
     // Use this for initialization
     void Start()
     {
@@ -39,6 +36,14 @@ public class CharacterMove : MonoBehaviour
         {
             onLeiter = true;
             rigidbod.useGravity = false;
+        }
+        if (other.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+        }
+        if (other.tag == "CheckPoint")
+        {
+            respawnPoint = other.transform.position;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -85,18 +90,11 @@ public class CharacterMove : MonoBehaviour
             {
                 transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed);
                 transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
-                while (Input.GetKeyDown("w") && onLeiter && sidemove)
-                {
-                    transform.Find("l_bein").GetComponent<Animation>().Play("l_bein");
-                    transform.Find("r_bein").GetComponent<Animation>().Play("r_bein");
-                    transform.Find("l_arm").GetComponent<Animation>().Play("l_arm");
-                    transform.Find("r_arm").GetComponent<Animation>().Play("r_arm");
-                }
-                // jump
-                if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
-                {
-                    GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
-                }
+            }
+            // jump
+            if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
+            {
+                GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
             }
             if (Input.GetButtonDown("Jump") && isGrounded && sidemove)
             {
