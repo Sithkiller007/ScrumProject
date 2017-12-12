@@ -1,0 +1,44 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 980 Ti (ID=0x17c8)
+    Vendor:   NVIDIA
+    VRAM:     6103 MB
+    Driver:   23.21.13.8859
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.017 seconds
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\Programme\Scrum Projekt\2D_3D_Test\Builds\Alpha_0.1_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 59Hz; virtual: 5120x1440 at -2560,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.925892 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 4360 -> priority: 1 
+  Thread -> id: 255c -> priority: 1 
+  Thread -> id: bec -> priority: 1 
+  Thread -> id: 3450 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.892103 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2015.
+Total: 0.320383 ms (FindLiveObjects: 0.071281 ms CreateObjectMapping: 0.021461 ms MarkObjects: 0.223041 ms  DeleteObjects: 0.003576 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.398562 ms
+
+Unloading 151 unused Assets to reduce memory usage. Loaded Objects now: 688.
+Total: 0.344143 ms (FindLiveObjects: 0.032702 ms CreateObjectMapping: 0.014051 ms MarkObjects: 0.178586 ms  DeleteObjects: 0.118546 ms)
+

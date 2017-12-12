@@ -16,11 +16,11 @@ public class GoToCheckpoint : MonoBehaviour
     }
     void Update()
     {
-        Point = GameObject.Find("Player").GetComponent<CharacterMove>().respawnPoint;
+        Point = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
     }
     void TaskOnClick()
     {
-        GameObject.Find("Player").transform.position = Point;
+        GameObject.FindWithTag("Player").transform.position = Point;
         Debug.Log("Zurückgesetzt an Checkpoint.");
     }
 }

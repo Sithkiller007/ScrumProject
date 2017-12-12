@@ -14,15 +14,15 @@ public class CharacterMove : MonoBehaviour
     public bool isGrounded;
     public bool onLeiter = false;
     private Rigidbody rigidbod;
-    public bool sidemove;
-    public bool topmove;
+    //public bool sidemove;
+    //public bool topmove;
     public bool anWand = false;
     public Vector3 respawnPoint;
     // Use this for initialization
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
-        sidemove = true;
+        //sidemove = true;
         /*sidemove = GameObject.Find("MainCamera").activeInHierarchy;
         topmove = GameObject.Find("TopView").activeInHierarchy;*/
     }
@@ -75,30 +75,25 @@ public class CharacterMove : MonoBehaviour
         if (!Input.GetButton("Fire1"))
         {
             // movement
-            if (sidemove)
-            {
                 //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
                 transform.Translate(new Vector3(0, 0, -h) * Time.deltaTime * moveSpeed);
-            }
-            else if (topmove)
-            {
-                //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
-                transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
-                transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
-            }
-            if (onLeiter && sidemove)
+            if (onLeiter)
             {
                 transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed);
                 transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
             }
             // jump
-            if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
+            else if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
             {
                 GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
             }
-            if (Input.GetButtonDown("Jump") && isGrounded && sidemove)
+            else if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            }
+            else
+            {
+                transform.Translate(new Vector3(0, 0, -h) * Time.deltaTime * moveSpeed);
             }
         }
     }
