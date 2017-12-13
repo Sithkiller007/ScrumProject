@@ -7,7 +7,7 @@ public class Gegner : MonoBehaviour
     public AudioSource tod;
     private Collider coll;
     private Renderer rend;
-    private float death = 0.2f;
+    private float death = 1f;
     public bool tot = false;
 
     private void Start()
@@ -23,6 +23,7 @@ public class Gegner : MonoBehaviour
             tod.Play();
             rend.enabled = false;
             coll.enabled = false;
+            tot = true;
         }
     }
     private void Update()
@@ -33,7 +34,7 @@ public class Gegner : MonoBehaviour
         }
         if (tot && death <= 0)
         {
-            death = 1;
+            death = 1f;
             this.gameObject.SetActive(false);
         }
     }

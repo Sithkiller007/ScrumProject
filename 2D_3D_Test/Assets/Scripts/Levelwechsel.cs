@@ -19,6 +19,13 @@ public class Levelwechsel : MonoBehaviour
             hintshown = true;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+           hintshown = !hintshown;
+        }
+    }
 
     void Update()
     {
@@ -26,6 +33,10 @@ public class Levelwechsel : MonoBehaviour
         {
             GameManager.instance.hint.text = hint;
             GameManager.instance.hint.color = vis;
+        }
+        else if (!hintshown)
+        {
+            GameManager.instance.hint.color = invis;
         }
         if (Input.GetButton("E") && hintshown)
         {

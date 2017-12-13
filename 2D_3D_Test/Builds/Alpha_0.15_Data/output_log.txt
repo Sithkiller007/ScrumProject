@@ -1,0 +1,44 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970M (ID=0x13d8)
+    Vendor:   NVIDIA
+    VRAM:     3040 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test\Builds\Alpha_0.15_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.776522 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 35ac -> priority: 1 
+  Thread -> id: 37b0 -> priority: 1 
+  Thread -> id: 4138 -> priority: 1 
+  Thread -> id: 34dc -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.436961 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2080.
+Total: 0.405986 ms (FindLiveObjects: 0.127345 ms CreateObjectMapping: 0.023948 ms MarkObjects: 0.249750 ms  DeleteObjects: 0.004181 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.529531 ms
+
+Unloading 153 unused Assets to reduce memory usage. Loaded Objects now: 695.
+Total: 0.442859 ms (FindLiveObjects: 0.053219 ms CreateObjectMapping: 0.019386 ms MarkObjects: 0.204893 ms  DeleteObjects: 0.164599 ms)
+

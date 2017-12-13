@@ -22,6 +22,7 @@ public class CharacterMove : MonoBehaviour
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
+        respawnPoint = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
         //sidemove = true;
         /*sidemove = GameObject.Find("MainCamera").activeInHierarchy;
         topmove = GameObject.Find("TopView").activeInHierarchy;*/
@@ -40,10 +41,6 @@ public class CharacterMove : MonoBehaviour
         if (other.tag == "FallDetector")
         {
             transform.position = respawnPoint;
-        }
-        if (other.tag == "CheckPoint")
-        {
-            respawnPoint = other.transform.position;
         }
     }
     private void OnTriggerExit(Collider other)

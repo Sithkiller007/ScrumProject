@@ -8,10 +8,12 @@ public class BlueprintMove : MonoBehaviour
     public float moveSpeed;
     private Rigidbody rigidbod;
     public Vector3 respawnPoint;
+    public float Pfeil = 90f;
 
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
+        respawnPoint = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,7 +27,6 @@ public class BlueprintMove : MonoBehaviour
             respawnPoint = other.transform.position;
         }
     }
-
     void FixedUpdate()
     {
         float h = Input.GetAxis("Horizontal");
@@ -35,6 +36,44 @@ public class BlueprintMove : MonoBehaviour
         {
             transform.Translate(new Vector3(0, 0, -v) * Time.deltaTime * moveSpeed);
             transform.Translate(new Vector3(-h, 0, 0) * Time.deltaTime * moveSpeed);
+        }
+    }
+    private void Update()
+    {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        if (v < 0)
+        {
+            Pfeil = 270;
+        }
+        if (v > 0)
+        {
+            Pfeil = 90;
+        }
+        if (h < 0)
+        {
+            Pfeil = 0;
+        }
+        if (h > 0)
+        {
+            Pfeil = 180;
+        }
+        if (v < 0 && h < 0)
+        {
+            Pfeil = 315;
+        }
+        if (v < 0 && h > 0)
+        {
+            Pfeil = 225;
+        }
+        if (v > 0 && h < 0)
+        {
+            Pfeil = 45;
+        }
+        if (v > 0 && h > 0)
+        {
+            Pfeil = 135;
         }
     }
 }
