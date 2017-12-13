@@ -75,9 +75,17 @@ public class CharacterMove : MonoBehaviour
         if (!Input.GetButton("Fire1"))
         {
             // movement
-                //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
-                transform.Translate(new Vector3(0, 0, -h) * Time.deltaTime * moveSpeed);
-            if (onLeiter)
+            //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
+            if (h > 0f)
+            {
+                transform.localScale = new Vector3(-1.2f, 1.7f, 1.2f);
+            }
+            if (h < 0f)
+            {
+                transform.localScale = new Vector3(-1.2f, 1.7f, -1.2f);
+            }
+            else if (onLeiter)
             {
                 transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed);
                 transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
@@ -87,13 +95,13 @@ public class CharacterMove : MonoBehaviour
             {
                 GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
             }
-            else if (Input.GetButtonDown("Jump") && isGrounded)
+            if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             }
             else
             {
-                transform.Translate(new Vector3(0, 0, -h) * Time.deltaTime * moveSpeed);
+                transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
             }
         }
     }
