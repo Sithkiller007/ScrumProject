@@ -347,33 +347,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Johannes\Documents\SCRUM REAL\2D_3D_Test
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 25}
-    m_SelectedIDs: ce260000
-    m_LastClickedID: 9934
-    m_ExpandedIDs: 0000000018250000cc2500003a26000000ca9a3bffffff7f
+    m_SelectedIDs: d4250000
+    m_LastClickedID: 9684
+    m_ExpandedIDs: 00000000182500003a260000dc26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefabs
-      m_OriginalName: Prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9684
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -503,9 +503,9 @@ MonoBehaviour:
     height: 551
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c060000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 76d5ffff7ad5ffffd8deffff26e3ffff90e5ffff72e6ffffe6e7ffffeae7fffff4e7ffffcafbffff00000000
+    m_ExpandedIDs: cafbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 44.475628, y: -0.85370445, z: 31.71848}
+    m_Target: {x: 32.479805, y: -2.3520305, z: 18.173292}
     speed: 2
-    m_Value: {x: 44.475628, y: -0.85370445, z: 31.71848}
+    m_Value: {x: 32.479805, y: -2.3520305, z: 18.173292}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -585,13 +585,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.13935232, y: -0.09047362, z: 0.012781812, w: 0.9860246}
+    m_Target: {x: 0.033826362, y: 0.06142734, z: -0.0020878187, w: 0.99753934}
     speed: 2
-    m_Value: {x: -0.1393523, y: 0.09047362, z: -0.012781812, w: -0.98602456}
+    m_Value: {x: 0.03382625, y: 0.061427135, z: -0.0020878117, w: 0.997536}
   m_Size:
-    m_Target: 93.05738
+    m_Target: 42.803307
     speed: 2
-    m_Value: 93.05738
+    m_Value: 42.803307
   m_Ortho:
     m_Target: 0
     speed: 2
