@@ -44,7 +44,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 63
+  controlID: 67
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 64
+  controlID: 68
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 65
+  controlID: 69
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 66
+  controlID: 70
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,19 +347,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - "Assets/Maya-Assets/M\xF6bel"
+    - Assets/Maya-Assets/Absperrung.fbm
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - "Assets/Maya-Assets/M\xF6bel"
+  - Assets/Maya-Assets/Absperrung.fbm
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jenny\Desktop\Scrum NEU\2D_3D_Test
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 215}
-    m_SelectedIDs: d2300000
-    m_LastClickedID: 12498
-    m_ExpandedIDs: 0000000018250000d82500004c26000068260000b2270000d230000000ca9a3bffffff7f
+    m_SelectedIDs: ce380000
+    m_LastClickedID: 14542
+    m_ExpandedIDs: 000000001c250000de250000562600007226000044280000dc28000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000018250000d82500004c260000b2270000
+    m_ExpandedIDs: 000000001c250000de250000562600007226000044280000dc280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,10 +502,10 @@ MonoBehaviour:
     width: 244
     height: 428
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1525}
-    m_SelectedIDs: 2e2a0000
-    m_LastClickedID: 10798
-    m_ExpandedIDs: b0eeffffdef0ffffe2f0ffff8af1ffff48f9ffff58fbffff5cfbffffdafbffff00000000
+    scrollPos: {x: 0, y: 341}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 6cb1ffff96dcffff16ddffff18ddffff1addffff1cddffff1eddffff20ddffff22ddffff24ddffff28ddffff2addffff2cddffff2eddffff30ddffff32ddffff34ddffff36ddffffcefbffff00000000062b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 18.605864, y: 2.1198492, z: 18.64473}
+    m_Target: {x: 40.04601, y: -10.166978, z: 22.562302}
     speed: 2
-    m_Value: {x: 18.605864, y: 2.1198492, z: 18.64473}
+    m_Value: {x: 40.04601, y: -10.166978, z: 22.562302}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -585,13 +585,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.12209269, y: -0.002390623, z: 0.00029751, w: -0.99252933}
+    m_Target: {x: -0.16216081, y: 0.015385425, z: -0.002523023, w: -0.98666054}
     speed: 2
-    m_Value: {x: -0.12209104, y: -0.002390591, z: 0.000297506, w: -0.992516}
+    m_Value: {x: -0.16215771, y: 0.015385131, z: -0.0025229747, w: -0.9866417}
   m_Size:
-    m_Target: 59.212234
+    m_Target: 53.309063
     speed: 2
-    m_Value: 59.212234
+    m_Value: 53.309063
   m_Ortho:
     m_Target: 0
     speed: 2
