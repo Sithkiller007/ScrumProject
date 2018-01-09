@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Gegner.cs" />
     <Compile Include="Assets\Scripts\GoToCheckpoint.cs" />
     <Compile Include="Assets\Scripts\Levelwechsel.cs" />
+    <Compile Include="Assets\Scripts\MoveTo.cs" />
     <Compile Include="Assets\Scripts\Pfeilrichtung.cs" />
     <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\Respawnpoint.cs" />
