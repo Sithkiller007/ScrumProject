@@ -94,11 +94,11 @@ public class CharacterMove : MonoBehaviour
             }
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
-                GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
             }
             else
             {
-                transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
+                    transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
             }
         }
     }
