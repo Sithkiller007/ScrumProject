@@ -18,7 +18,10 @@ public class CharacterMove : MonoBehaviour
     //public bool topmove;
     public bool anWand = false;
     public Vector3 respawnPoint;
-    // Use this for initialization
+    public Transform point;
+    RaycastHit hit;
+    public float raylength = 2f;
+
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
@@ -65,6 +68,7 @@ public class CharacterMove : MonoBehaviour
     void FixedUpdate()
     {
         // check ground
+        Ray ray = new Ray(point.transform.position, Vector3.down);
         isGrounded = Physics.Raycast(transform.position, -transform.up, transform.localScale.y + 0.1f);
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
@@ -92,13 +96,18 @@ public class CharacterMove : MonoBehaviour
             {
                 GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
             }
-            if (Input.GetButtonDown("Jump") && isGrounded)
+            else if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
             }
+            else if(Input.GetButton("Jump") && Physics.Raycast(ray, out hit, raylength))
+            {
+                if(hit.collider.tag == "JumpableObject")
+                    GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
+            }
             else
             {
-                    transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
+                transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
             }
         }
     }
