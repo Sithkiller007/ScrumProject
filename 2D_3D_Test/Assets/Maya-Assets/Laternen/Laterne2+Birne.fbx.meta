@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 92ecbce9a596bdf48b727e1ba995078c
+timeCreated: 1515944780
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: "Gl\xFChbirne:pCylinder11"
+    100002: "Gl\xFChbirne:pCylinder5"
+    100004: "Gl\xFChbirne:pCylinder6"
+    100006: "Gl\xFChbirne:pCylinder7"
+    100008: "Gl\xFChbirne:pCylinder8"
+    100010: "Gl\xFChbirne:pCylinder9"
+    100012: "Gl\xFChbirne:pHelix1"
+    100014: "Gl\xFChbirne:polySurface10"
+    100016: "Gl\xFChbirne:polySurface11"
+    100018: "Gl\xFChbirne:polySurface12"
+    100020: "Gl\xFChbirne:polySurface13"
+    100022: "Gl\xFChbirne:polySurface4"
+    100024: "Gl\xFChbirne:polySurface4 1"
+    100026: "Gl\xFChbirne:polySurface5"
+    100028: "Gl\xFChbirne:polySurface6"
+    100030: "Gl\xFChbirne:polySurface7"
+    100032: "Gl\xFChbirne:polySurface8"
+    100034: "Gl\xFChbirne:polySurface9"
+    100036: "Gl\xFChbirne:pSphere4"
+    100038: "Gl\xFChbirne:pTorus13"
+    100040: "Gl\xFChbirne:transform20"
+    100042: "Gl\xFChbirne:transform21"
+    100044: "Gl\xFChbirne:transform24"
+    100046: "Gl\xFChbirne:transform25"
+    100048: "Gl\xFChbirne:transform26"
+    100050: "Gl\xFChbirne:transform27"
+    100052: "Gl\xFChbirne:transform28"
+    100054: "Gl\xFChbirne:transform29"
+    100056: "Gl\xFChbirne:transform30"
+    100058: "Gl\xFChbirne:transform31"
+    100060: "Gl\xFChbirne:transform32"
+    100062: "Gl\xFChbirne:transform33"
+    100064: "Gl\xFChbirne:transform34"
+    100066: "Gl\xFChbirne:transform35"
+    100068: "Gl\xFChbirne:transform36"
+    100070: "Gl\xFChbirne:transform37"
+    100072: "Gl\xFChbirne:transform38"
+    100074: "Gl\xFChbirne:transform39"
+    100076: "Gl\xFChbirne:transform40"
+    100078: "Gl\xFChbirne:transform41"
+    100080: //RootNode
+    100082: pCylinder1
+    100084: pCylinder10
+    100086: pCylinder2
+    100088: pCylinder3
+    100090: pCylinder4
+    100092: pCylinder5
+    100094: pCylinder7
+    100096: pCylinder8
+    100098: pCylinder9
+    100100: pSphere5
+    100102: pSphere6
+    100104: transform1
+    100106: transform10
+    100108: transform2
+    100110: transform3
+    100112: transform4
+    100114: transform5
+    100116: transform6
+    100118: transform7
+    100120: transform8
+    100122: transform9
+    400000: "Gl\xFChbirne:pCylinder11"
+    400002: "Gl\xFChbirne:pCylinder5"
+    400004: "Gl\xFChbirne:pCylinder6"
+    400006: "Gl\xFChbirne:pCylinder7"
+    400008: "Gl\xFChbirne:pCylinder8"
+    400010: "Gl\xFChbirne:pCylinder9"
+    400012: "Gl\xFChbirne:pHelix1"
+    400014: "Gl\xFChbirne:polySurface10"
+    400016: "Gl\xFChbirne:polySurface11"
+    400018: "Gl\xFChbirne:polySurface12"
+    400020: "Gl\xFChbirne:polySurface13"
+    400022: "Gl\xFChbirne:polySurface4"
+    400024: "Gl\xFChbirne:polySurface4 1"
+    400026: "Gl\xFChbirne:polySurface5"
+    400028: "Gl\xFChbirne:polySurface6"
+    400030: "Gl\xFChbirne:polySurface7"
+    400032: "Gl\xFChbirne:polySurface8"
+    400034: "Gl\xFChbirne:polySurface9"
+    400036: "Gl\xFChbirne:pSphere4"
+    400038: "Gl\xFChbirne:pTorus13"
+    400040: "Gl\xFChbirne:transform20"
+    400042: "Gl\xFChbirne:transform21"
+    400044: "Gl\xFChbirne:transform24"
+    400046: "Gl\xFChbirne:transform25"
+    400048: "Gl\xFChbirne:transform26"
+    400050: "Gl\xFChbirne:transform27"
+    400052: "Gl\xFChbirne:transform28"
+    400054: "Gl\xFChbirne:transform29"
+    400056: "Gl\xFChbirne:transform30"
+    400058: "Gl\xFChbirne:transform31"
+    400060: "Gl\xFChbirne:transform32"
+    400062: "Gl\xFChbirne:transform33"
+    400064: "Gl\xFChbirne:transform34"
+    400066: "Gl\xFChbirne:transform35"
+    400068: "Gl\xFChbirne:transform36"
+    400070: "Gl\xFChbirne:transform37"
+    400072: "Gl\xFChbirne:transform38"
+    400074: "Gl\xFChbirne:transform39"
+    400076: "Gl\xFChbirne:transform40"
+    400078: "Gl\xFChbirne:transform41"
+    400080: //RootNode
+    400082: pCylinder1
+    400084: pCylinder10
+    400086: pCylinder2
+    400088: pCylinder3
+    400090: pCylinder4
+    400092: pCylinder5
+    400094: pCylinder7
+    400096: pCylinder8
+    400098: pCylinder9
+    400100: pSphere5
+    400102: pSphere6
+    400104: transform1
+    400106: transform10
+    400108: transform2
+    400110: transform3
+    400112: transform4
+    400114: transform5
+    400116: transform6
+    400118: transform7
+    400120: transform8
+    400122: transform9
+    2300000: pCylinder10
+    3300000: pCylinder10
+    4300000: pCylinder10
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
