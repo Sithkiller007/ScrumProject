@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\MoveTo.cs" />
      <Compile Include="Assets\Scripts\Pfeilrichtung.cs" />
      <Compile Include="Assets\Scripts\Quit.cs" />
+     <Compile Include="Assets\Scripts\RemoveWindow.cs" />
      <Compile Include="Assets\Scripts\Respawnpoint.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\SaveButton.cs" />
