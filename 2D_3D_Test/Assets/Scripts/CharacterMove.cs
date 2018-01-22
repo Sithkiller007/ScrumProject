@@ -17,12 +17,25 @@ public class CharacterMove : MonoBehaviour
     //public bool sidemove;
     //public bool topmove;
     public bool anWand = false;
+    private bool isCrouched = false;
     public Vector3 respawnPoint;
     public Transform point;
     RaycastHit hit;
     public float raylength = 2f;
+    private Animator m_Anim;
+    public bool m_FacingLeft = true;
+    private float speed;
+    private float vspeed;
+    private CapsuleCollider caps;
 
-    void Start()
+    void Awake()
+    {
+        // Setting up references.
+        m_Anim = GetComponent<Animator>();
+        rigidbod = GetComponent<Rigidbody>();
+        caps = GetComponent<CapsuleCollider>();
+    }
+        void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
         respawnPoint = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
@@ -60,8 +73,28 @@ public class CharacterMove : MonoBehaviour
     }
     void Update()
     {
+        vspeed = Input.GetAxis("Vertical");
+        speed = Input.GetAxis("Horizontal");
+        m_Anim.SetFloat("Speed", speed);
+        m_Anim.SetFloat("vSpeed", vspeed);
         /*sidemove = GameObject.Find("MainCamera").activeInHierarchy;
         topmove = GameObject.Find("TopView").activeInHierarchy;*/
+        if (Input.GetKeyDown("f"))
+        {
+            m_Anim.Play("attack", -1, 0f);
+        }
+        if (Input.GetButtonDown("Crouch") && !isCrouched)
+        {
+            isCrouched = true;
+            caps.height = 1.5f;
+            m_Anim.SetBool("isCrouched", true);
+        }
+        if (Input.GetButtonUp("Crouch") && isCrouched)
+        {
+            isCrouched = false;
+            caps.height = 3.5f;
+            m_Anim.SetBool("isCrouched", false);
+        }
     }
 
     // FixedUpdate is called once per frame for Physics updates
