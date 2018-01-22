@@ -73,10 +73,6 @@ public class CharacterMove : MonoBehaviour
     }
     void Update()
     {
-        vspeed = Input.GetAxis("Vertical");
-        speed = Input.GetAxis("Horizontal");
-        m_Anim.SetFloat("Speed", speed);
-        m_Anim.SetFloat("vSpeed", vspeed);
         /*sidemove = GameObject.Find("MainCamera").activeInHierarchy;
         topmove = GameObject.Find("TopView").activeInHierarchy;*/
         if (Input.GetKeyDown("f"))
@@ -105,21 +101,16 @@ public class CharacterMove : MonoBehaviour
         isGrounded = Physics.Raycast(transform.position, -transform.up, transform.localScale.y + 0.1f);
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        m_Anim.SetFloat("Speed", h);
+        m_Anim.SetFloat("vSpeed", rigidbod.velocity.y);
 
         if (!Input.GetButton("Fire1"))
         {
             // movement
             //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
             transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
-            if (h > 0f)
-            {
-                transform.localScale = new Vector3(-1.2f, 1.7f, 1.2f);
-            }
-            if (h < 0f)
-            {
-                transform.localScale = new Vector3(-1.2f, 1.7f, -1.2f);
-            }
-            else if (onLeiter)
+
+            if (onLeiter)
             {
                 transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed);
                 transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
