@@ -23,11 +23,10 @@ public class CharacterMove : MonoBehaviour
     RaycastHit hit;
     public float raylength = 2f;
     private Animator m_Anim;
-    public bool m_FacingLeft = true;
+    public bool FacingRight = true;
     private float speed;
     private float vspeed;
     private CapsuleCollider caps;
-
     void Awake()
     {
         // Setting up references.
@@ -92,8 +91,6 @@ public class CharacterMove : MonoBehaviour
             m_Anim.SetBool("isCrouched", false);
         }
     }
-
-    // FixedUpdate is called once per frame for Physics updates
     void FixedUpdate()
     {
         // check ground
@@ -104,11 +101,18 @@ public class CharacterMove : MonoBehaviour
         m_Anim.SetFloat("Speed", h);
         m_Anim.SetFloat("vSpeed", rigidbod.velocity.y);
 
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_Anim.SetBool("jumping", true);
+        }
+        else
+        {
+            m_Anim.SetBool("jumping", false);
+        }
         if (!Input.GetButton("Fire1"))
         {
             // movement
-            //transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
-            transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
+            transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
 
             if (onLeiter)
             {
@@ -116,23 +120,48 @@ public class CharacterMove : MonoBehaviour
                 transform.Rotate(Vector3.up * h * rotateSpeed * Time.deltaTime);
             }
             // jump
-            else if (Input.GetButtonDown("Jump") && !isGrounded && anWand)
-            {
-                GetComponent<Rigidbody>().velocity = new Vector3(0, jumpSpeed, 0);
             }
-            else if (Input.GetButtonDown("Jump") && isGrounded)
+            else if (Input.GetButton("Jump") && isGrounded)
             {
-                GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
-            }
-            else if(Input.GetButton("Jump") && Physics.Raycast(ray, out hit, raylength))
+                    GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Force);
+        }
+            else if (Input.GetButton("Jump") && Physics.Raycast(ray, out hit, raylength))
             {
-                if(hit.collider.tag == "JumpableObject")
+                if (hit.collider.tag == "JumpableObject")
                     GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
             }
-            else
+        }
+    public void Move(float h, bool _jump)
+        {
+            //only control the player if grounded or airControl is turned on
+            if (isGrounded)
             {
-                transform.Translate(new Vector3(0, 0, h) * Time.deltaTime * moveSpeed);
+                // If the input is moving the player right and the player is facing left...
+                if ( h > 0 && !FacingRight)
+                {
+                    // ... flip the player.
+                    Flip(h);
+                }
+                // Otherwise if the input is moving the player left and the player is facing right...
+                else if (h < 0 && FacingRight)
+                {
+                    // ... flip the player.
+                    Flip(h);
+                }
+            }
+
+            // If the player should jump...
+            if (isGrounded && _jump && m_Anim.GetBool("isGrounded"))
+            {
+                // Add a vertical force to the player.
+                isGrounded = false;
+                m_Anim.SetBool("isGrounded", false);
             }
         }
+    private void Flip(float h)
+        {
+        Vector3 theScale = transform.localScale;
+
+        theScale.z = -1*theScale.z;
+        }
     }
-}

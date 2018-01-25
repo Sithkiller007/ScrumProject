@@ -446,7 +446,7 @@
     <Compile Include="Assets\Anima2D\Scripts\Editor\VertexManipulator\VertexManipulator.cs" />
     <Compile Include="Assets\Anima2D\Scripts\Editor\WeightEditor.cs" />
     <Compile Include="Assets\Anima2D\Scripts\Editor\WindowEditorTool.cs" />
-    <Compile Include="Assets\Editor\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\Maya-Assets\Flaschen\Editor\FieldOfViewEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />
