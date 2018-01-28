@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using System.Linq;
+using UnityEditor;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {

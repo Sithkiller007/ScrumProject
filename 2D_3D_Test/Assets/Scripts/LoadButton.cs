@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using System.IO;
+using UnityEngine.UI;
 
 public class LoadButton : MonoBehaviour {
 
