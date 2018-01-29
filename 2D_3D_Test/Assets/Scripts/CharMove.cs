@@ -10,12 +10,16 @@ public class CharMove : MonoBehaviour
     private Rigidbody rigidbod;
     float distToGround;
     public bool isGrounded;
+    Animator anim;
+    bool isCrouched;
+    bool jumping;
 
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
         //respawnPoint = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
         distToGround = GetComponent<Collider>().bounds.extents.y;
+        anim = GetComponent<Animator>();
     }
 
     /*bool IsGrounded()
@@ -38,7 +42,12 @@ public class CharMove : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        anim.SetFloat("HSpeed", h);
+        anim.SetFloat("VSpeed", rigidbod.velocity.y);
+        Debug.Log(v);
         isGrounded = Physics.Raycast(transform.position, -transform.up, transform.localScale.y + 2f);
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("jumping", jumping);
 
         if (!Input.GetButton("Fire1"))
         {
@@ -47,13 +56,33 @@ public class CharMove : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            jumping = true;
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
+        }
+        if (Input.GetKeyDown("f"))
+        {
+            anim.Play("attack", -1, 0f);
+        }
+        if (Input.GetButtonDown("Crouch") && !isCrouched)
+        {
+            isCrouched = true;
+            //caps.height = 1.5f;
+            anim.SetBool("isCrouched", true);
+        }
+        if (Input.GetButtonUp("Crouch") && isCrouched)
+        {
+            isCrouched = false;
+            //caps.height = 3.5f;
+            anim.SetBool("isCrouched", false);
+        }
+        else if(isGrounded)
+        {
+            jumping = false;
         }
 
     }
     private void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+
     }
 }
