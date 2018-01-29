@@ -13,13 +13,15 @@ public class CharMove : MonoBehaviour
     Animator anim;
     bool isCrouched;
     bool jumping;
+    Collider caps;
 
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
         //respawnPoint = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
-        distToGround = GetComponent<Collider>().bounds.extents.y;
+        //distToGround = GetComponent<Collider>().bounds.extents.y;
         anim = GetComponent<Animator>();
+        caps = GetComponent<CapsuleCollider>();
     }
 
     /*bool IsGrounded()
@@ -44,7 +46,6 @@ public class CharMove : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         anim.SetFloat("HSpeed", h);
         anim.SetFloat("VSpeed", rigidbod.velocity.y);
-        Debug.Log(v);
         isGrounded = Physics.Raycast(transform.position, -transform.up, transform.localScale.y + 2f);
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("jumping", jumping);
@@ -66,13 +67,13 @@ public class CharMove : MonoBehaviour
         if (Input.GetButtonDown("Crouch") && !isCrouched)
         {
             isCrouched = true;
-            //caps.height = 1.5f;
+            caps.enabled = false;
             anim.SetBool("isCrouched", true);
         }
         if (Input.GetButtonUp("Crouch") && isCrouched)
         {
             isCrouched = false;
-            //caps.height = 3.5f;
+            caps.enabled = true;
             anim.SetBool("isCrouched", false);
         }
         else if(isGrounded)
