@@ -9,7 +9,7 @@ public class CharacterMove_old : MonoBehaviour
     public float rotateSpeed;
     public float jumpSpeed;
     public float distance = 1f;
-    public Collider other;
+    //public Collider other;
     public bool destroyable;
     public bool isGrounded;
     public bool onLeiter = false;
