@@ -13,9 +13,13 @@ public class CharMove : MonoBehaviour
     Animator anim;
     bool isCrouched;
     bool jumping;
+    public bool isClimbing;
+    public bool wallJump = false;
     Collider caps;
     RaycastHit hit;
     public bool isFacingLeft;
+    public int spruenge = 2;
+
 
     void Start()
     {
@@ -26,32 +30,69 @@ public class CharMove : MonoBehaviour
         caps = GetComponent<BoxCollider>();
         isFacingLeft = true;
     }
-
-    /*bool IsGrounded()
+    private void OnTriggerEnter(Collider other)
     {
-        return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
-    }*/
-
-    /*private void OnTriggerEnter(Collider other)
-    {
+        if (other.gameObject.CompareTag("Wand"))
+        {
+            wallJump = true;
+        }
+        if (other.gameObject.tag == "Ladder")
+        {
+            isClimbing = true;
+            rigidbod.useGravity = false;
+        }
         if (other.tag == "FallDetector")
         {
-            transform.position = respawnPoint;
+            //transform.position = respawnPoint;
         }
-        if (other.tag == "CheckPoint")
+        if (other.tag == "Ground")
         {
-            respawnPoint = other.transform.position;
+            spruenge = 2;
+            isGrounded = true;
         }
-    }*/
-
-    private void OnCollisionStay(Collision collision)
+    }
+    private void OnTriggerExit(Collider other)
     {
-        isGrounded = true;
+        if (other.gameObject.CompareTag("Wand"))
+        {
+            spruenge -= spruenge;
+            wallJump = false;
+        }
+        if (other.gameObject.tag == "Ladder")
+        {
+            isClimbing = false;
+            rigidbod.useGravity = true;
+        }
+        if (other.tag == "Ground")
+        {
+            isGrounded = false;
+        }
+    }
+        /*bool IsGrounded()
+        {
+            return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
+        }*/
+
+        /*private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "FallDetector")
+            {
+                transform.position = respawnPoint;
+            }
+            if (other.tag == "CheckPoint")
+            {
+                respawnPoint = other.transform.position;
+            }
+        }*/
+
+        private void OnCollisionStay(Collision collision)
+    {
+        //isGrounded = true;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        isGrounded = false;
+        //isGrounded = false;
     }
     void FixedUpdate()
     {
@@ -59,9 +100,11 @@ public class CharMove : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         anim.SetFloat("HSpeed", h);
         anim.SetFloat("VSpeed", rigidbod.velocity.y);
+        anim.SetFloat("vInput", v);
         //isGrounded = Physics.Raycast(transform.position, -transform.up, transform.localScale.y + 2f);
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("jumping", jumping);
+        anim.SetBool("isClimbing", isClimbing);
 
         if(h < 0)
         {
@@ -94,10 +137,15 @@ public class CharMove : MonoBehaviour
                     }
                 }
             }*/
-            if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched)
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
         {
             jumping = true;
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
+        }
+            else if (Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
+        {
+            jumping = true;
+            GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed/5, ForceMode.Impulse);
         }
 
         if (!Input.GetButton("Fire1"))
