@@ -98,6 +98,7 @@ public class CharMove : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        float hinput = rigidbod.velocity.x;
         anim.SetFloat("HSpeed", h);
         anim.SetFloat("VSpeed", rigidbod.velocity.y);
         anim.SetFloat("vInput", v);
@@ -110,20 +111,11 @@ public class CharMove : MonoBehaviour
         {
             isFacingLeft = true;
         }
-        else if(h >0)
+        else if(h > 0)
         {
             isFacingLeft = false;
         }
-        if (isFacingLeft)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-            caps.transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (!isFacingLeft)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-            caps.transform.localScale = new Vector3(-1, 1, 1);
-        }
+        
             
 
             /*if(Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y + 2f))
@@ -145,12 +137,28 @@ public class CharMove : MonoBehaviour
             else if (Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
         {
             jumping = true;
-            GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed/5, ForceMode.Impulse);
+            spruenge--;
+            if (isFacingLeft)
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(1, 1, 0) * jumpSpeed/2, ForceMode.Impulse);
+                isFacingLeft = false;
+                /*transform.localScale = new Vector3(-1, 1, 1);
+                caps.transform.localScale = new Vector3(-1, 1, 1);*/
+                h = -0.15f;
+            }
+            else
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(-1, 1, 0) * jumpSpeed/2, ForceMode.Impulse);
+                isFacingLeft = true;
+                /*transform.localScale = new Vector3(1, 1, 1);
+                caps.transform.localScale = new Vector3(1, 1, 1);*/
+                h = 0.15f;
+            }
         }
 
         if (!Input.GetButton("Fire1"))
         {
-            transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
+            //transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
             transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
         }
         if (Input.GetKeyDown("f"))
@@ -169,11 +177,24 @@ public class CharMove : MonoBehaviour
             //caps.enabled = true;
             anim.SetBool("isCrouched", false);
         }
+        else
+        {
+            jumping = false;
+        }
 
     }
     private void Update()
     {
-
+        if (isFacingLeft)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            caps.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (!isFacingLeft)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            caps.transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 
     /*private void Flip(float h)

@@ -6,6 +6,7 @@ public class RemoveWindow : MonoBehaviour {
 
     private Collider mycol;
     private Renderer myren;
+    public GameObject wall;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class RemoveWindow : MonoBehaviour {
             sound.Play();*/
             mycol.enabled = false;
             myren.enabled = false;
+            wall.SetActive(false);
         }
     }
 }
