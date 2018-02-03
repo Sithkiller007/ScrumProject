@@ -40,6 +40,8 @@ public class CharMove : MonoBehaviour
         {
             isClimbing = true;
             rigidbod.useGravity = false;
+            rigidbod.constraints = RigidbodyConstraints.FreezePositionX;
+            rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
         }
         if (other.tag == "FallDetector")
         {
@@ -49,6 +51,7 @@ public class CharMove : MonoBehaviour
         {
             spruenge = 2;
             isGrounded = true;
+            rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -115,32 +118,32 @@ public class CharMove : MonoBehaviour
         {
             isFacingLeft = false;
         }
-        
-            
 
-            /*if(Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y + 2f))
+
+
+        /*if(Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y + 2f))
+        {
+            if(hit.collider.tag == "JumpableObject")
             {
-                if(hit.collider.tag == "JumpableObject")
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
-                    {
-                        jumping = true;
-                        GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
-                    }
+                    jumping = true;
+                    GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
                 }
-            }*/
-            if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
+            }
+        }*/
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
         {
             jumping = true;
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
         }
-            else if (Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
+        else if (Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
         {
             jumping = true;
             spruenge--;
             if (isFacingLeft)
             {
-                GetComponent<Rigidbody>().AddForce(new Vector3(1, 1, 0) * jumpSpeed/2, ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(new Vector3(1, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
                 isFacingLeft = false;
                 /*transform.localScale = new Vector3(-1, 1, 1);
                 caps.transform.localScale = new Vector3(-1, 1, 1);*/
@@ -148,10 +151,26 @@ public class CharMove : MonoBehaviour
             }
             else
             {
-                GetComponent<Rigidbody>().AddForce(new Vector3(-1, 1, 0) * jumpSpeed/2, ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(new Vector3(-1, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
                 isFacingLeft = true;
                 /*transform.localScale = new Vector3(1, 1, 1);
                 caps.transform.localScale = new Vector3(1, 1, 1);*/
+                h = 0.15f;
+            }
+        }
+        else if (Input.GetKey(KeyCode.Space) && isClimbing && !isCrouched && !wallJump)
+        {
+            rigidbod.useGravity = true;
+            if (isFacingLeft)
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
+                isFacingLeft = false;
+                h = -0.15f;
+            }
+            else
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
+                isFacingLeft = true;
                 h = 0.15f;
             }
         }
@@ -160,6 +179,11 @@ public class CharMove : MonoBehaviour
         {
             //transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
             transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
+        }
+        if (isClimbing)
+        {
+            transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed/2);
+
         }
         if (Input.GetKeyDown("f"))
         {
