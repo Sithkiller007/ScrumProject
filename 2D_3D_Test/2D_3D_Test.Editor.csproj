@@ -456,7 +456,6 @@
     <None Include="Assets\Anima2D\Licenses.txt" />
     <None Include="Assets\Anima2D\Readme.txt" />
     <None Include="Assets\Anima2D\Version.txt" />
-    <None Include="Assets\Sound\Sound.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
