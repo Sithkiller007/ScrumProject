@@ -10,10 +10,19 @@ public class Gegner : MonoBehaviour
     private float death = 1f;
     public bool tot = false;
 
+    //Sound-Teil
+    public AudioClip deadClip;
+
+    public AudioSource deadSource;
+
     private void Start()
     {
         coll = GetComponent<Collider>();
         rend = GetComponent<Renderer>();
+
+        //Sound-Teil
+        deadSource.clip = deadClip;
+
     }
     void OnTriggerEnter(Collider other)
     {
@@ -31,6 +40,10 @@ public class Gegner : MonoBehaviour
         if (tot)
         {
             death -= Time.deltaTime;
+           
+            //Sound abspielen
+            deadSource.Play();
+            deadSource.loop = false;
         }
         if (tot && death <= 0)
         {

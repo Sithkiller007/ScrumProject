@@ -20,6 +20,21 @@ public class CharMove : MonoBehaviour
     public bool isFacingLeft;
     public int spruenge = 2;
 
+    //Sound-Teil
+    public AudioClip jumpClip;
+    public AudioClip walljumpClip;
+    public AudioClip ladderClip;
+    public AudioClip landClip;
+    public AudioClip hittingClip;
+    public AudioClip walkingClip;
+
+    public AudioSource jumpSource;
+    public AudioSource walljumSource;
+    public AudioSource ladderSource;
+    public AudioSource landSource;
+    public AudioSource hittingSource;
+    public AudioSource walkingSource;
+
 
     void Start()
     {
@@ -29,12 +44,25 @@ public class CharMove : MonoBehaviour
         anim = GetComponent<Animator>();
         caps = GetComponent<BoxCollider>();
         isFacingLeft = true;
+
+        //Sound-Teil
+        jumpSource.clip = jumpClip;
+        walljumSource.clip = walljumpClip;
+        ladderSource.clip = ladderClip;
+        landSource.clip = landClip;
+        hittingSource.clip = hittingClip;
+        walkingSource.clip = walkingClip;
+
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Wand"))
         {
             wallJump = true;
+
+            //Sound abspielen
+            walljumSource.Play();
+            walljumSource.loop = false;
         }
         if (other.gameObject.tag == "Ladder")
         {
@@ -42,6 +70,11 @@ public class CharMove : MonoBehaviour
             rigidbod.useGravity = false;
             rigidbod.constraints = RigidbodyConstraints.FreezePositionX;
             rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
+
+            //Sound abspielen
+            ladderSource.Play();
+            ladderSource.loop = true;
+
         }
         if (other.tag == "FallDetector")
         {
@@ -52,6 +85,10 @@ public class CharMove : MonoBehaviour
             spruenge = 2;
             isGrounded = true;
             rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
+
+            //Sound abspielen
+            landSource.Play();
+            landSource.loop = false;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -65,10 +102,21 @@ public class CharMove : MonoBehaviour
         {
             isClimbing = false;
             rigidbod.useGravity = true;
+
+            //Sound abspielen
+            ladderSource.Stop();
+            ladderSource.loop = false;
+
         }
         if (other.tag == "Ground")
         {
             isGrounded = false;
+
+            // Sound abspielen
+            jumpSource.Play();
+            jumpSource.loop = false;
+            
+         
         }
     }
         /*bool IsGrounded()
@@ -188,6 +236,10 @@ public class CharMove : MonoBehaviour
         if (Input.GetKeyDown("f"))
         {
             anim.Play("attack", -1, 0f);
+
+            //Sound einfügen
+            hittingSource.Play();
+            hittingSource.loop = false;
         }
         if (Input.GetButtonDown("Crouch") && !isCrouched)
         {
