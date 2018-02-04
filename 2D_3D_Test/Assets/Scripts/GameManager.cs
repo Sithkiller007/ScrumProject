@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using System.Linq;
+using UnityEditor;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
     public bool sideCamera;
     public bool topCamera;
     public Canvas inGameMenu;
-    bool menuOpen = false;
+    public bool menuOpen = false;
     public Text hint;
     public bool itempickedup;
 
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
             inGameMenu.enabled = false;
             menuOpen = false;
         }
-        else if (Input.GetButtonDown("Cancel") && menuOpen == false)
+        else if (Input.GetButtonDown("Cancel") && menuOpen == false && SceneManager.GetActiveScene().buildIndex != 0)
         {
             inGameMenu.enabled = true;
             menuOpen = true;

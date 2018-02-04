@@ -19,5 +19,6 @@ public class Restart : MonoBehaviour
     {
         GameObject.Find("Player").transform.position = new Vector3(0, 0.27f, 0);
         GameManager.instance.inGameMenu.enabled = false;
+        Debug.Log("Zurückgesetzt an Anfang.");
     }
 }

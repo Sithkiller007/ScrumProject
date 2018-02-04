@@ -47,7 +47,7 @@ public class ToggleView : MonoBehaviour {
 			btn2.interactable = false;
 		}*/
 
-		if (Input.GetButton ("SideView")) {
+		/*if (Input.GetButton ("SideView")) {
 			main.enabled = true;
 			sec.enabled = false;
             GameManager.instance.sideCamera = false;
@@ -61,6 +61,6 @@ public class ToggleView : MonoBehaviour {
             GameManager.instance.topCamera = false;
             GameObject.Find("Player").GetComponent<CharacterMove>().sidemove = false;
             GameObject.Find("Player").GetComponent<CharacterMove>().topmove = true;
-        }
+        }*/
 	}
 }
