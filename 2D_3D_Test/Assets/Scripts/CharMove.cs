@@ -51,7 +51,7 @@ public class CharMove : MonoBehaviour
         ladderSource.clip = ladderClip;
         landSource.clip = landClip;
         hittingSource.clip = hittingClip;
-        walkingSource.clip = walkingClip;
+        //walkingSource.clip = walkingClip;
 
     }
     private void OnTriggerEnter(Collider other)

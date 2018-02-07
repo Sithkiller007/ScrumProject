@@ -21,7 +21,7 @@ public class Gegner : MonoBehaviour
         rend = GetComponent<Renderer>();
 
         //Sound-Teil
-        deadSource.clip = deadClip;
+        //deadSource.clip = deadClip;
 
     }
     void OnTriggerEnter(Collider other)
