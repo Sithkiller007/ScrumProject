@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scripts\SideCameraFollow.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\SoundTrigger.cs" />
+     <Compile Include="Assets\Scripts\SoundTrigger_OneShot.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\ToggleView.cs" />
      <Compile Include="Assets\Scripts\ToMainMenu.cs" />
