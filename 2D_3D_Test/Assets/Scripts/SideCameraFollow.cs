@@ -12,6 +12,13 @@ public class SideCameraFollow : MonoBehaviour {
     }
     void Update()
     {
-        transform.position = new Vector3(player.position.x, player.position.y + 3.33f, transform.position.z);
-    }
+        if (player.position.y < 18)
+        {
+            transform.position = new Vector3(player.position.x, player.position.y + 3.33f, transform.position.z);
+        }
+        else
+        {
+            transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+        } 
+            }
 }
