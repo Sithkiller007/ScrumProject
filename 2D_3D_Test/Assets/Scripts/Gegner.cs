@@ -11,13 +11,13 @@ public class Gegner : MonoBehaviour
     public bool tot = false;
 
     //Sound-Teil
-    public AudioClip deadClip;
+    //public AudioClip deadClip;
 
-    public AudioSource deadSource;
+    //public AudioSource deadSource;
 
     private void Start()
     {
-        coll = GetComponent<Collider>();
+        //coll = GetComponent<Collider>();
         rend = GetComponent<Renderer>();
 
         //Sound-Teil
@@ -30,8 +30,9 @@ public class Gegner : MonoBehaviour
         if (other.gameObject.tag == "Finish")
         {
             tod.Play();
-            rend.enabled = false;
-            coll.enabled = false;
+            //rend.enabled = false;
+            this.enabled = false; 
+            //coll.enabled = false;
             tot = true;
         }
     }
@@ -42,8 +43,8 @@ public class Gegner : MonoBehaviour
             death -= Time.deltaTime;
            
             //Sound abspielen
-            deadSource.Play();
-            deadSource.loop = false;
+            /*deadSource.Play();
+            deadSource.loop = false;*/
         }
         if (tot && death <= 0)
         {
