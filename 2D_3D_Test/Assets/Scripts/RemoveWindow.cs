@@ -14,7 +14,7 @@ public class RemoveWindow : MonoBehaviour {
         myren = gameObject.GetComponent<Renderer>();
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
 
         if (other.gameObject.tag == "Player")

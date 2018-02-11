@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 121
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 122
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 700
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -367,9 +367,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b4bdfcff
-    m_LastClickedID: -213580
-    m_ExpandedIDs: b4bdfcffe2befcff9ec1fcff6212fdfff415fdffd28dfdff3e8efdff0ca3fdff90a9fdffe4affdff82d3fdffe417fefff817fefff66bfeff74d5ffff80efffff9efbffff00000000
+    m_SelectedIDs: 6ca6f7ff
+    m_LastClickedID: -547220
+    m_ExpandedIDs: 6ca6f7fff4a6f7ffa0f0f8ff685ffbff0842fcff5643fcffce43fcffd243fcff4248fcff6e49fcffe688fcff30a4feffaea6feff0aa7feff40a9feff42a9feff44a9feffa6acfeff8ef0feffd223ffffd423ffffba6affffbc6affffae88ffff12efffff98fbffff0000000060470000a0470000c2470000b87d000078780100d878010008790100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Blueprint_Street
+  - Blueprint_City
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -420,14 +420,14 @@ MonoBehaviour:
     height: 679
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1932.8879256906375
+  lastFramingTime: 13664.467431160005
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.400572, y: 9.028703, z: -6.9159527}
+    m_Target: {x: -10.09, y: 0.15643309, z: -10.362}
     speed: 2
-    m_Value: {x: -5.400572, y: 9.028703, z: -6.9159527}
+    m_Value: {x: -10.09, y: 0.15643309, z: -10.362}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -451,13 +451,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.44109687, y: 0.016153572, z: -0.007938882, w: 0.8972835}
+    m_Target: {x: 0.70338476, y: -0.047836736, z: 0.047551434, w: 0.7076181}
     speed: 2
-    m_Value: {x: 0.44109508, y: 0.016153507, z: -0.00793885, w: 0.89727986}
+    m_Value: {x: 0.7033767, y: -0.04783619, z: 0.04755089, w: 0.70761}
   m_Size:
-    m_Target: 17.052664
+    m_Target: 2.950504
     speed: 2
-    m_Value: 17.052664
+    m_Value: 2.950504
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -535,19 +535,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Maya-Assets/Flaschen/Materials
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Maya-Assets/Flaschen/Materials
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Sven\Documents\GitHub\ScrumProject\2D_3D_Test
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 319}
-    m_SelectedIDs: ac2a0000
-    m_LastClickedID: 10924
-    m_ExpandedIDs: 0000000020290000902a0000722b00007e2b00000a350000103b0000124000007441000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 363}
+    m_SelectedIDs: be2c0000
+    m_LastClickedID: 11454
+    m_ExpandedIDs: 000000007e290000ee2a0000d02b0000ec3200006835000070400000d241000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 228}
     m_SelectedIDs: 788ee6ff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020290000902a0000722b00007e2b0000042e00000a350000103b00001240000074410000
+    m_ExpandedIDs: 000000007e290000ee2a0000d02b0000dc2b0000683500006e3b000070400000d2410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,7 +627,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 180}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 226
 --- !u!114 &17
