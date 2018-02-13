@@ -37,7 +37,7 @@ public class WennDannSkript : MonoBehaviour
         }
 	}
 
-    void OnCollisionEnter (Collider col)
+    void OnTriggerEnter (Collider col)
     {
         if (col.gameObject.tag == "one" )
         {

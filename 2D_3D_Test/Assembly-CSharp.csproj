@@ -75,6 +75,7 @@
      <Compile Include="Assets\Anima2D\Scripts\SpriteMesh.cs" />
      <Compile Include="Assets\Anima2D\Scripts\SpriteMeshAnimation.cs" />
      <Compile Include="Assets\Anima2D\Scripts\SpriteMeshInstance.cs" />
+     <Compile Include="Assets\Scripts\activateOne.cs" />
      <Compile Include="Assets\Scripts\BlueprintMove.cs" />
      <Compile Include="Assets\Scripts\CharacterMove.cs" />
      <Compile Include="Assets\Scripts\CharacterMove_old.cs" />
@@ -106,6 +107,7 @@
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\ToggleView.cs" />
      <Compile Include="Assets\Scripts\ToMainMenu.cs" />
+     <Compile Include="Assets\Scripts\WennDannSkript.cs" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />
      <None Include="Assets\Anima2D\Version.txt" />
