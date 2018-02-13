@@ -107,6 +107,7 @@
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\ToggleView.cs" />
      <Compile Include="Assets\Scripts\ToMainMenu.cs" />
+     <Compile Include="Assets\Scripts\WennDannCounter.cs" />
      <Compile Include="Assets\Scripts\WennDannSkript.cs" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />

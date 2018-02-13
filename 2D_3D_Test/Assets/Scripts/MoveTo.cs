@@ -36,9 +36,9 @@ public class MoveTo : MonoBehaviour
     {
         if (target)
         {
-            Debug.Log("playerinrange");
+            //Debug.Log("playerinrange");
             float disttoTarget = Vector3.Distance(transform.position, target.transform.position);
-            Debug.Log(disttoTarget);
+            //Debug.Log(disttoTarget);
             if (disttoTarget <= followdis)
             {
                 agent.destination = target.position;

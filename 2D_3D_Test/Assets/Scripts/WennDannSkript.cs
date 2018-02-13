@@ -9,10 +9,11 @@ public class WennDannSkript : MonoBehaviour
     public GameObject two;
     public GameObject three;
     public GameObject unlockOne;
-    public GameObject unlockTwo;
-    public bool oneActive = false;
+    //public GameObject unlockTwo; Bei Bedarf unkommentieren und zuweisen, sonst funktioniert das skript nicht
+    /*public bool oneActive = false;
     public bool twoActive = false;
-    public bool threeActive = false;
+    public bool threeActive = false;*/
+    public static int wenndanncounter;
 
     public bool isActive;
 
@@ -21,23 +22,23 @@ public class WennDannSkript : MonoBehaviour
     {
 
         unlockOne.SetActive(false);
-        unlockTwo.SetActive(false);
+        //unlockTwo.SetActive(false);
 
-        isActive = GetComponentInChildren<activateOne>(oneActive);
+        //isActive = GetComponentInChildren<activateOne>(oneActive);
 
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if (oneActive == true && twoActive == true && threeActive == true)
+		if (wenndanncounter == 3)
         {
             unlockOne.SetActive(true);
-            unlockTwo.SetActive(true);
+            //unlockTwo.SetActive(true);
         }
 	}
 
-    void OnTriggerEnter (Collider col)
+    /*void OnTriggerEnter (Collider col)
     {
         if (col.gameObject.tag == "one" )
         {
@@ -56,5 +57,5 @@ public class WennDannSkript : MonoBehaviour
             threeActive = true;
             Debug.Log("GEHT SCHON!!");
         }
-    }
+    }*/
 }
