@@ -26,4 +26,5 @@ public class RemoveWindow : MonoBehaviour {
             wall.SetActive(false);
         }
     }
+
 }
