@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 109
+  controlID: 132
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1510
     height: 987
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 60
+  controlID: 133
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1510
     height: 713
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 61
+  controlID: 134
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 260
     height: 713
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 410
     height: 987
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -366,29 +366,29 @@ MonoBehaviour:
     height: 692
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 32}
-    m_SelectedIDs: fae8feff
-    m_LastClickedID: -71430
-    m_ExpandedIDs: 7c09ffff9027ffff44a1ffff6caafffffcbdffff6cd2ffff9efbffff0000000020430000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 704d0100
+    m_LastClickedID: 85360
+    m_ExpandedIDs: 7c99faff46a7faffb0aefafffe43fbff00d0feff02d0feff90d3feff54eafeff6819ffffd6a0ffff96fbffff00000000b27200001281000068840000cc8400000a850000c287000064880000ea3a01006a4b0100164d0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Hill_Character
+      m_OriginalName: Hill_Character
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -77822
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Level 1_PostBlueprint
+  - Level_3
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -420,14 +420,14 @@ MonoBehaviour:
     height: 692
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 0
-  lastFramingTime: 6561.07764654271
+  lastFramingTime: 3639.740364054537
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.3690457, y: 20.591919, z: -0.41497517}
+    m_Target: {x: 2.5709705, y: -0.33226776, z: -1.7575887}
     speed: 2
-    m_Value: {x: -1.3690457, y: 20.591919, z: -0.41497517}
+    m_Value: {x: 2.5709705, y: -0.33226776, z: -1.7575887}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -451,13 +451,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.14585206, y: 0.017806554, z: -0.0026255634, w: 0.9891427}
+    m_Target: {x: 0.31406942, y: 0.011392452, z: -0.00376864, w: 0.9493242}
     speed: 2
-    m_Value: {x: 0.14585206, y: 0.017806554, z: -0.0026255634, w: 0.9891427}
+    m_Value: {x: 0.31406942, y: 0.011392452, z: -0.00376864, w: 0.9493242}
   m_Size:
-    m_Target: 44.442875
+    m_Target: 81.91741
     speed: 2
-    m_Value: 44.442875
+    m_Value: 81.91741
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -535,19 +535,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Sven\Documents\GitHub\ScrumProject\2D_3D_Test
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 100}
-    m_SelectedIDs: b22a0000
-    m_LastClickedID: 10930
-    m_ExpandedIDs: 0000000024290000882b0000823500003242000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 116}
+    m_SelectedIDs: a02e0000
+    m_LastClickedID: 11936
+    m_ExpandedIDs: 0000000054290000b82b0000b23500006242000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 228}
     m_SelectedIDs: 788ee6ff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000024290000882b00008235000032420000
+    m_ExpandedIDs: 0000000054290000b82b0000b235000062420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,7 +627,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 420}
+    m_ScrollPosition: {x: 0, y: 104}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 226
 --- !u!114 &17
