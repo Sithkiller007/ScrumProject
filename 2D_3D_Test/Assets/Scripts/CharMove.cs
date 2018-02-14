@@ -19,7 +19,9 @@ public class CharMove : MonoBehaviour
     RaycastHit hit;
     public bool isFacingLeft;
     public int spruenge = 2;
+    public int schlaege = 2;
     public bool canMove = true;
+    public Vector3 respawnPoint;
 
     //Sound-Teil
     public AudioClip jumpClip;
@@ -40,7 +42,7 @@ public class CharMove : MonoBehaviour
     void Start()
     {
         rigidbod = GetComponent<Rigidbody>();
-        //respawnPoint = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
+        respawnPoint = transform.localPosition;
         //distToGround = GetComponent<Collider>().bounds.extents.y;
         anim = GetComponent<Animator>();
         caps = GetComponent<BoxCollider>();
@@ -77,10 +79,7 @@ public class CharMove : MonoBehaviour
             ladderSource.loop = true;
 
         }
-        if (other.tag == "FallDetector")
-        {
-            //transform.position = respawnPoint;
-        }
+
         if (other.tag == "Ground")
         {
             spruenge = 2;
@@ -90,6 +89,10 @@ public class CharMove : MonoBehaviour
             //Sound abspielen
             landSource.Play();
             landSource.loop = false;
+        }
+        if (other.tag == "Gefahr")
+        {
+            schlaege--;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -116,28 +119,22 @@ public class CharMove : MonoBehaviour
             // Sound abspielen
             jumpSource.Play();
             jumpSource.loop = false;
-            
-         
+        }
+        if (other.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+        }
+        if (other.tag == "CheckPoint")
+        {
+            respawnPoint = other.transform.position;
         }
     }
-        /*bool IsGrounded()
-        {
-            return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
-        }*/
+    /*bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
+    }*/
 
-        /*private void OnTriggerEnter(Collider other)
-        {
-            if (other.tag == "FallDetector")
-            {
-                transform.position = respawnPoint;
-            }
-            if (other.tag == "CheckPoint")
-            {
-                respawnPoint = other.transform.position;
-            }
-        }*/
-
-        private void OnCollisionStay(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         //isGrounded = true;
     }
@@ -181,12 +178,12 @@ public class CharMove : MonoBehaviour
                 }
             }
         }*/
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
+        if (canMove && Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
         {
             jumping = true;
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
         }
-        else if (Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
+        else if (canMove && Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
         {
             jumping = true;
             spruenge--;
@@ -207,7 +204,7 @@ public class CharMove : MonoBehaviour
                 h = 0.15f;
             }
         }
-        else if (Input.GetKey(KeyCode.Space) && isClimbing && !isCrouched && !wallJump)
+        else if (canMove && Input.GetKey(KeyCode.Space) && isClimbing && !isCrouched && !wallJump)
         {
             rigidbod.useGravity = true;
             if (isFacingLeft)
@@ -234,7 +231,7 @@ public class CharMove : MonoBehaviour
             transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed/2);
 
         }
-        if (Input.GetKeyDown("f"))
+        if (canMove && Input.GetKeyDown("f"))
         {
             anim.Play("attack", -1, 0f);
 
@@ -242,13 +239,13 @@ public class CharMove : MonoBehaviour
             hittingSource.Play();
             hittingSource.loop = false;
         }
-        if (Input.GetButtonDown("Crouch") && !isCrouched)
+        if (canMove && Input.GetButtonDown("Crouch") && !isCrouched)
         {
             isCrouched = true;
             //caps.enabled = false;
             anim.SetBool("isCrouched", true);
         }
-        if (Input.GetButtonUp("Crouch") && isCrouched)
+        if (canMove && Input.GetButtonUp("Crouch") && isCrouched)
         {
             isCrouched = false;
             //caps.enabled = true;
@@ -273,7 +270,11 @@ public class CharMove : MonoBehaviour
             caps.transform.localScale = new Vector3(-1, 1, 1);
         }
     }
-
+    void Sterben()
+    {
+        transform.position = respawnPoint;
+        schlaege = 2;
+    }
     /*private void Flip(float h)
     {
         Vector3 theScale = transform.localScale;
