@@ -8,12 +8,12 @@ public class SoundTrigger_OneShot : MonoBehaviour {
     public float Volume;
     AudioSource audio; */
     public bool alreadyPlayed = false;
-
+    private AudioSource audio;
 	// Use this for initialization
 	void Start ()
     {
-       // audio = GetComponent<AudioSource>();
-	}
+        audio = GetComponent<AudioSource>();
+    }
 
     /*void OnTriggerEnter()
     {
@@ -27,7 +27,7 @@ public class SoundTrigger_OneShot : MonoBehaviour {
         {
             if (alreadyPlayed == false)
             {
-             GetComponent<AudioSource>().Play();
+             audio.Play();
                 alreadyPlayed = true;
             }
             
@@ -37,6 +37,15 @@ public class SoundTrigger_OneShot : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-		
+        if (audio.isPlaying)
+        {
+            CharMove move = GameObject.FindWithTag("Player").GetComponent<CharMove>();
+            move.canMove = false;
+        }
+        else
+        {
+            CharMove move = GameObject.FindWithTag("Player").GetComponent<CharMove>();
+            move.canMove = true;
+        }
 	}
 }

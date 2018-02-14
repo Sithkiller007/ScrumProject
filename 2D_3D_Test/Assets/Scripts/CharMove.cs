@@ -19,6 +19,7 @@ public class CharMove : MonoBehaviour
     RaycastHit hit;
     public bool isFacingLeft;
     public int spruenge = 2;
+    public bool canMove = true;
 
     //Sound-Teil
     public AudioClip jumpClip;
@@ -223,7 +224,7 @@ public class CharMove : MonoBehaviour
             }
         }
 
-        if (!Input.GetButton("Fire1"))
+        if (canMove && !Input.GetButton("Fire1"))
         {
             //transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
             transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
