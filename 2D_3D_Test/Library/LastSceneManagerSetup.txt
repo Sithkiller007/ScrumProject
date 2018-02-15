@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Level 1.unity
-=======
-- path: Assets/Scenes/Level_3.unity
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   isLoaded: 1
   isActive: 1

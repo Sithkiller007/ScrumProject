@@ -20,11 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-<<<<<<< HEAD
   m_MinSize: {x: 950, y: 300}
-=======
-  m_MinSize: {x: 950, y: 542}
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -46,14 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 708, y: 381}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 55
-=======
-  controlID: 56
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+  controlID: 31
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,22 +64,12 @@ MonoBehaviour:
     y: 0
     width: 409
     height: 987
-<<<<<<< HEAD
-  m_MinSize: {x: 302, y: 381}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
-  m_Panes:
-  - {fileID: 15}
-  - {fileID: 12}
-  m_Selected: 1
-=======
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -105,23 +87,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 373
     height: 590
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-=======
-    width: 324
-    height: 669
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -139,22 +111,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 590
     width: 1511
     height: 397
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 14}
-  - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
-=======
-    y: 669
-    width: 1511
-    height: 318
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
@@ -162,8 +121,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,14 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1511
     height: 987
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 10
-=======
-  controlID: 57
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+  controlID: 32
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,19 +229,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1511
-<<<<<<< HEAD
     height: 590
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
-=======
-    height: 669
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
-  vertical: 0
-  controlID: 58
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+  controlID: 33
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,31 +248,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 373
     y: 0
     width: 1138
     height: 590
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 17}
-=======
-    x: 324
-    y: 0
-    width: 1187
-    height: 669
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_Panes:
+  - {fileID: 16}
   - {fileID: 17}
-<<<<<<< HEAD
-  - {fileID: 18}
-  - {fileID: 13}
-=======
   - {fileID: 12}
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
@@ -336,36 +268,6 @@ MonoBehaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 300, y: 360}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Navigation
-    m_Image: {fileID: 7874161543223113035, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 1513
-    y: 92
-    width: 407
-    height: 966
-  m_PersistentViewDataDictionary: {fileID: 0}
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-=======
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_EditorHideFlags: 1
   m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -386,11 +288,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &14
-=======
 --- !u!114 &13
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -413,15 +311,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 682
     width: 1509
     height: 376
-=======
-    y: 761
-    width: 1509
-    height: 297
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -435,30 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-<<<<<<< HEAD
-    - Assets/Scripts
-=======
-    - Assets/Textures
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    - Assets/Scenes
   m_ViewMode: 1
-  m_StartGridSize: 16
+  m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
-  m_LastFoldersGridSize: 16
+  - Assets/Scenes
+  m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Sven\Documents\GitHub\ScrumProject\2D_3D_Test
   m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 61}
-    m_SelectedIDs: a0350000
-    m_LastClickedID: 13728
-    m_ExpandedIDs: 00000000fc2800006e2b00009435000068420000
-=======
-    scrollPos: {x: 0, y: 140}
-    m_SelectedIDs: 1a320000
-    m_LastClickedID: 12826
-    m_ExpandedIDs: 000000000632000074320000e0320000ee5c000000ca9a3bffffff7f
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 9c2e0000
+    m_LastClickedID: 11932
+    m_ExpandedIDs: 000000003e290000aa2b0000ca3500009242000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -486,11 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000fc2800006e2b00009435000068420000
-=======
-    m_ExpandedIDs: 00000000f63100000632000074320000e0320000ee5c0000
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    m_ExpandedIDs: 000000003e290000aa2b0000ca35000092420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,9 +392,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ac3f0000
-    m_LastClickedInstanceID: 16300
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -542,17 +419,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-<<<<<<< HEAD
-    m_ScrollPosition: {x: 0, y: 22.5}
-    m_GridSize: 16
-  m_DirectoriesAreaWidth: 267
---- !u!114 &15
-=======
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 16
-  m_DirectoriesAreaWidth: 218
+    m_GridSize: 64
+  m_DirectoriesAreaWidth: 306
 --- !u!114 &14
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -586,11 +456,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &16
-=======
 --- !u!114 &15
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -614,59 +480,37 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-<<<<<<< HEAD
     width: 371
     height: 569
-=======
-    width: 322
-    height: 648
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 783f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 84fbffff00000000
+    m_ExpandedIDs: dcf5ffff76fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-<<<<<<< HEAD
       m_Name: 
       m_OriginalName: 
-=======
-      m_Name: Levelwechsel
-      m_OriginalName: Levelwechsel
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-<<<<<<< HEAD
       m_UserData: 0
-=======
-      m_UserData: 83214
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 4}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-<<<<<<< HEAD
   - Level 1
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
---- !u!114 &17
-=======
-  - Level_3
-  m_CurrenRootInstanceID: 0
-  m_Locked: 0
-  m_CurrentSortingName: TransformSorting
 --- !u!114 &16
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -688,7 +532,6 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 375
     y: 92
     width: 1134
@@ -696,28 +539,13 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 0
-=======
-    x: 326
-    y: 92
-    width: 1183
-    height: 648
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_SceneLighting: 0
-  lastFramingTime: 6981.174475302574
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: -8.341699, y: -0.43330383, z: -0.3711338}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -8.341699, y: -0.43330383, z: -0.3711338}
-=======
-    m_Target: {x: 4.746024, y: 5.569235, z: 13.587244}
-    speed: 2
-    m_Value: {x: 4.746024, y: 5.569235, z: 13.587244}
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -741,23 +569,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-<<<<<<< HEAD
-    m_Target: {x: -0.59050137, y: -0.015253075, z: 0.011163384, w: -0.80681723}
+    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
-    m_Value: {x: -0.5905013, y: -0.015253075, z: 0.011163383, w: -0.80681723}
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 14.378478
+    m_Target: 18.675282
     speed: 2
-    m_Value: 14.378478
-=======
-    m_Target: {x: -0.21665773, y: 0.008786085, z: -0.0019500544, w: -0.97620827}
-    speed: 2
-    m_Value: {x: -0.2166573, y: 0.008786067, z: -0.0019500505, w: -0.9762063}
-  m_Size:
-    m_Target: 71.584496
-    speed: 2
-    m_Value: 71.584496
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    m_Value: 18.675282
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -769,11 +587,7 @@ MonoBehaviour:
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
-<<<<<<< HEAD
---- !u!114 &18
-=======
 --- !u!114 &17
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -795,17 +609,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 323
     y: 17
     width: 973
     height: 501
-=======
-    x: 326
-    y: 92
-    width: 1183
-    height: 648
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -815,17 +622,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-<<<<<<< HEAD
     m_HBaseRangeMin: -486.5
     m_HBaseRangeMax: 486.5
     m_VBaseRangeMin: -242
     m_VBaseRangeMax: 242
-=======
-    m_HBaseRangeMin: -591.5
-    m_HBaseRangeMax: 591.5
-    m_VBaseRangeMin: -315.5
-    m_VBaseRangeMax: 315.5
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -842,26 +642,18 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
       width: 973
       height: 484
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 486.5, y: 242}
-=======
-      width: 1183
-      height: 631
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 591.5, y: 315.5}
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    m_Translation: {x: 436.5, y: 192}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-      x: -486.5
-      y: -242
+      x: -436.5
+      y: -192
       width: 973
       height: 484
     m_MinimalGUI: 1
@@ -872,22 +664,7 @@ MonoBehaviour:
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
---- !u!114 &19
-=======
-      x: -591.5
-      y: -315.5
-      width: 1183
-      height: 631
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1183, y: 648}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000100000100
 --- !u!114 &18
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -909,14 +686,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-    y: 682
-    width: 1509
-    height: 376
-=======
-    y: 761
-    width: 1509
-    height: 297
->>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
   m_PersistentViewDataDictionary: {fileID: 0}
