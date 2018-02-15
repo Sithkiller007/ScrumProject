@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level_3.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Blueprint_Bank_1.OG.unity
+=======
+- path: Assets/Scenes/Blueprint_Hotelzimmer.unity
+>>>>>>> c72ef9cf7a615955da2e88eb6a9c0a6ce05775b7
+>>>>>>> master
   isLoaded: 1
   isActive: 1
