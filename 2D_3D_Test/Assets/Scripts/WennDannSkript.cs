@@ -31,7 +31,7 @@ public class WennDannSkript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		if (wenndanncounter == 3)
+		if (wenndanncounter >= 3)
         {
             unlockOne.SetActive(true);
             //unlockTwo.SetActive(true);
