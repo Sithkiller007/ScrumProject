@@ -30,7 +30,7 @@ public class Gegner_Hill_City : MonoBehaviour
 
         if (other.gameObject.tag == "Finish")
         {
-            SceneManager.LoadScene(level, LoadSceneMode.Single);
+            //SceneManager.LoadScene(level, LoadSceneMode.Single);
         }
     }
     private void Update()

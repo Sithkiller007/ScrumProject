@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Blueprint_City.unity
+- path: Assets/Scenes/Blueprint_Hotelzimmer.unity
   isLoaded: 1
   isActive: 1
