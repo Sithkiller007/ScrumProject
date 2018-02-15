@@ -1,2 +1,7 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
+<<<<<<< HEAD
+=======
+Cmd: preprocess
+  insize=1138 outsize=548 ok=1
+>>>>>>> parent of 2dc3c892... Merge branch 'master' into Sven
