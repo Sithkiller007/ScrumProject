@@ -37,15 +37,23 @@ public class SoundTrigger_OneShot : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if (audio.isPlaying)
+        if (audio.isPlaying && GameObject.FindWithTag("Player").GetComponent<CharMove>())
         {
             CharMove move = GameObject.FindWithTag("Player").GetComponent<CharMove>();
             move.canMove = false;
         }
-        else
+        else if(GameObject.FindWithTag("Player").GetComponent<CharMove>())
         {
             CharMove move = GameObject.FindWithTag("Player").GetComponent<CharMove>();
             move.canMove = true;
+        }
+        else if(audio.isPlaying)
+        {
+            GameObject.FindWithTag("Player").GetComponent<BlueprintMove>().canMove = false;
+        }
+        else
+        {
+            GameObject.FindWithTag("Player").GetComponent<BlueprintMove>().canMove = true;
         }
 	}
 }
