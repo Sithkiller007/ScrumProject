@@ -16,7 +16,7 @@ public class Levelwechsel_Instant : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && !alreadyshown)
         {
-            hintshown = true;
+            //hintshown = true;
             SceneManager.LoadScene(level, LoadSceneMode.Single);
         }
     }
@@ -24,13 +24,13 @@ public class Levelwechsel_Instant : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-           hintshown = !hintshown;
+           //hintshown = !hintshown;
         }
     }
 
     void Update()
     {
-        if (hintshown)
+       /* if (hintshown)
         {
             GameManager.instance.hint.text = hint;
             GameManager.instance.hint.color = vis;
@@ -45,6 +45,6 @@ public class Levelwechsel_Instant : MonoBehaviour
             GameManager.instance.hint.color = invis;
             alreadyshown = true;
             SceneManager.LoadScene(level, LoadSceneMode.Single);
-        }
+        } */
     }
 }
