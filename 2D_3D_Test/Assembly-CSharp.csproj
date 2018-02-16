@@ -88,9 +88,11 @@
      <Compile Include="Assets\Scripts\EnemySight.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gegner.cs" />
+     <Compile Include="Assets\Scripts\Gegner_Hill_City.cs" />
      <Compile Include="Assets\Scripts\GoToCheckpoint.cs" />
      <Compile Include="Assets\Scripts\itemPickup.cs" />
      <Compile Include="Assets\Scripts\Levelwechsel.cs" />
+     <Compile Include="Assets\Scripts\Levelwechsel_Instant.cs" />
      <Compile Include="Assets\Scripts\LoadButton.cs" />
      <Compile Include="Assets\Scripts\MoveTo.cs" />
      <Compile Include="Assets\Scripts\Pfeilrichtung.cs" />
