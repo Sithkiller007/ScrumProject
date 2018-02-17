@@ -1,20 +1,89 @@
 WindowsStandalone
 SceneListBegin?
 Assets/Scenes/Startbildschirm.unity
+Assets/Scenes/Cutscene_Intro.unity
 Assets/Scenes/Level 1.unity
 Assets/Scenes/Blueprint_Hotelzimmer.unity
 Assets/Scenes/Blueprint_Street.unity
+Assets/Scenes/Cutscene 2_Beginning.unity
 Assets/Scenes/Level 2.unity
 Assets/Scenes/Level 1_PostBlueprint.unity
+Assets/Scenes/Blueprint_Bank_1.OG.unity
+Assets/Scenes/Blueprint_Bank_EG.unity
+Assets/Scenes/Blueprint_Tresor.unity
+Assets/Scenes/Blueprint_Lager.unity
+Assets/Scenes/Cutscene 3 _Beginn.unity
+Assets/Scenes/Blueprint_City.unity
+Assets/Scenes/Level_3.unity
+Assets/Scenes/Cutscene 2_Zwischensequenz.unity
+Assets/Scenes/Level 2_2.unity
+Assets/Scenes/Cutscene 3 _Hill stirbt.unity
+Assets/Scenes/Startbildschirm_Nach Durchspielen.unity
 SceneListEnd?
+c3ffd4fc15e14ee0044cd9f960091588 Assembly-CSharp.dll:.EnemyFieldofView
+ea6226ea02f66a371eab33a1d1aad3bd Assembly-CSharp.dll:.CheckPoint
+f54a46b2e320b3b1abfcbc1d66c2a22d Assembly-CSharp.dll:Anima2D.SpriteMeshAnimation
+509daa27a9d5c3893477a09479803ae4 Assembly-CSharp.dll:.activateOne
+82ee1ad2dd423249133024273ef44007 Assembly-CSharp.dll:.CutSceneIntro
+980acc20957502cd7f20694e34b5edaa Assembly-CSharp.dll:.itemPickup
+82f67d42f6f6f642199f8e70786a0e68 Assembly-CSharp.dll:UnityChan.SpringManager
+502728b9452146248c56a06132052990 Assembly-CSharp.dll:.StartGame
+06e3689c08c245e724f6827c9004a9dd Assembly-CSharp.dll:.CharacterMove
+6203381586747fa705dd6a8aeeb50ac8 Assembly-CSharp.dll:.Pfeilrichtung
+d0ffb3b85c2bc2616a91064c21622552 Assembly-CSharp.dll:.Levelwechsel
+2589191ee18e9f2bd7f9dba79872ee68 Assembly-CSharp.dll:.SoundTrigger_OneShot
+a0f84ec16aa554d51669d23170cd9f27 Assembly-CSharp.dll:.Restart
+61881e1675ac8a58167433745405f195 Assembly-CSharp.dll:.DoorAction
+545508b46af4e4fa90a9265ae7ca7a9d Assembly-CSharp.dll:.BlueprintMove
+322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
+dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
+e7df77a30c26e7304d66e64634b101e5 Assembly-CSharp.dll:.playerAttack
+99eedc22d24ae7068e6dc83eb2ad8c13 Assembly-CSharp.dll:.GameManager
+25b44febda575ffacb82cbb95e8dd2f4 Assembly-CSharp.dll:.CharMove
+eced8c8958fc8778d1b8604e9122d164 Assembly-CSharp.dll:Anima2D.IkLimb2D
+24bb26e7da03092690ef38ebcd7ec1c0 Assembly-CSharp.dll:.SideCameraFollow
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SaveLoad
+3627bf6dfec66aa923725a2519ef14e7 Assembly-CSharp.dll:.WennDannSkript
+bb21ecf26db1f02f72231857956971b6 Assembly-CSharp.dll:Anima2D.SpriteMesh
+1cf81dcd78c967ce99e9f1110cba8dda Assembly-CSharp.dll:.ToMainMenu
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CharacterMotion
+79c6a8172ff3b29776fd5e7c7e3f72ae Assembly-CSharp.dll:.SoundManager
+542530e11789dc403468901628b3f4a8 Assembly-CSharp.dll:Anima2D.Bone2D
+68a6470d9b146708efff0ffee7d49c66 Assembly-CSharp.dll:.SpriteCycle
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
+40c01039b6172fe91e0826f348b529c0 Assembly-CSharp.dll:.ToggleView
+a0f84ec16aa554d51669d23170cd9f27 Assembly-CSharp.dll:.Quit
+0686f8f33d7576f2ee68363f59d0b2c0 Assembly-CSharp.dll:.Gegner
+94791e10e9868a03187dd0fb195321c4 Assembly-CSharp.dll:.MoveTo
+e10245ebf6407bde38e71ee3699f57d2 Assembly-CSharp.dll:.SpriteCycleParallax
+6de27d44fd8221c044725607ba9fb429 Assembly-CSharp.dll:Anima2D.Control
+82ee1ad2dd423249133024273ef44007 Assembly-CSharp.dll:.CutScene
+a0f84ec16aa554d51669d23170cd9f27 Assembly-CSharp.dll:.GoToCheckpoint
+7c77f968e64ab916995178fea3d2b142 Assembly-CSharp.dll:.Respawnpoint
+36834dfb5701af6fb98fa516219e44a8 Assembly-CSharp.dll:Anima2D.SpriteMeshInstance
+27c92c39db77ae23b27ecd403c424843 Assembly-CSharp.dll:UnityChan.SpringBone
+4b61969b0268a0bb343b8c6608407e27 Assembly-CSharp.dll:.SaveButton
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SoundTrigger
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Anima2D.EditorUpdaterProxy
+1bd73dc08780414ea7c06375d2fbc18e Assembly-CSharp.dll:UnityChan.SpringCollider
+e1038aa7f4b50abdc53c0f0508bd8b17 Assembly-CSharp.dll:Anima2D.IkGroup
+9178ecff1806ecf80e725349180033bd Assembly-CSharp.dll:.LoadButton
+746b433948311313072b7a0c3b030cd1 Assembly-CSharp.dll:.EnemySight
+01439f69ab23783ab7af2cce00890849 Assembly-CSharp.dll:Anima2D.Pose
+7d3bde46808734d3ff460282d88c9f6e Assembly-CSharp.dll:Anima2D.PoseManager
+fae0736a02865ba74d2a8182bcbad4a4 Assembly-CSharp.dll:.RemoveWindow
+87836d6c4daea923475d744856873584 Assembly-CSharp.dll:.CharacterMove_old
+db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.Follow
+9a6ce7dad7e8aee4b6fc16d50385a21b Assembly-CSharp.dll:Anima2D.IkCCD2D
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.WennDannCounter
+a8e482df6d69222c2ca475ef90a9561e Assembly-CSharp.dll:.SkinnedMeshCombiner
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
-322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
-dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -57,8 +126,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -145,53 +212,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
-1cf81dcd78c967ce99e9f1110cba8dda Assembly-CSharp.dll:.ToMainMenu
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SoundTrigger
-542530e11789dc403468901628b3f4a8 Assembly-CSharp.dll:Anima2D.Bone2D
-1bd73dc08780414ea7c06375d2fbc18e Assembly-CSharp.dll:UnityChan.SpringCollider
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CharacterMotion
-2589191ee18e9f2bd7f9dba79872ee68 Assembly-CSharp.dll:.SoundTrigger_OneShot
-746b433948311313072b7a0c3b030cd1 Assembly-CSharp.dll:.EnemySight
-40c01039b6172fe91e0826f348b529c0 Assembly-CSharp.dll:.ToggleView
-502728b9452146248c56a06132052990 Assembly-CSharp.dll:.StartGame
-e10245ebf6407bde38e71ee3699f57d2 Assembly-CSharp.dll:.SpriteCycleParallax
-698f78304dd9cfe30f279a5db0d2e86f Assembly-CSharp.dll:.BlueprintMove
-a0f84ec16aa554d51669d23170cd9f27 Assembly-CSharp.dll:.GoToCheckpoint
-9a6ce7dad7e8aee4b6fc16d50385a21b Assembly-CSharp.dll:Anima2D.IkCCD2D
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SaveLoad
-fae0736a02865ba74d2a8182bcbad4a4 Assembly-CSharp.dll:.RemoveWindow
-e7df77a30c26e7304d66e64634b101e5 Assembly-CSharp.dll:.playerAttack
-4b61969b0268a0bb343b8c6608407e27 Assembly-CSharp.dll:.SaveButton
-87836d6c4daea923475d744856873584 Assembly-CSharp.dll:.CharacterMove_old
-7d3bde46808734d3ff460282d88c9f6e Assembly-CSharp.dll:Anima2D.PoseManager
-94791e10e9868a03187dd0fb195321c4 Assembly-CSharp.dll:.MoveTo
-36834dfb5701af6fb98fa516219e44a8 Assembly-CSharp.dll:Anima2D.SpriteMeshInstance
-68a6470d9b146708efff0ffee7d49c66 Assembly-CSharp.dll:.SpriteCycle
-99eedc22d24ae7068e6dc83eb2ad8c13 Assembly-CSharp.dll:.GameManager
-c3ffd4fc15e14ee0044cd9f960091588 Assembly-CSharp.dll:.EnemyFieldofView
-06e3689c08c245e724f6827c9004a9dd Assembly-CSharp.dll:.CharacterMove
-79c6a8172ff3b29776fd5e7c7e3f72ae Assembly-CSharp.dll:.SoundManager
-510593135fc9d917cc8e318d01fc8e64 Assembly-CSharp.dll:.CheckPoint
-6203381586747fa705dd6a8aeeb50ac8 Assembly-CSharp.dll:.Pfeilrichtung
-a0f84ec16aa554d51669d23170cd9f27 Assembly-CSharp.dll:.Quit
-db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.Follow
-9178ecff1806ecf80e725349180033bd Assembly-CSharp.dll:.LoadButton
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Crouch
-eced8c8958fc8778d1b8604e9122d164 Assembly-CSharp.dll:Anima2D.IkLimb2D
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Anima2D.EditorUpdaterProxy
-0686f8f33d7576f2ee68363f59d0b2c0 Assembly-CSharp.dll:.Gegner
-e1038aa7f4b50abdc53c0f0508bd8b17 Assembly-CSharp.dll:Anima2D.IkGroup
-f54a46b2e320b3b1abfcbc1d66c2a22d Assembly-CSharp.dll:Anima2D.SpriteMeshAnimation
-d0ffb3b85c2bc2616a91064c21622552 Assembly-CSharp.dll:.Levelwechsel
-a8e482df6d69222c2ca475ef90a9561e Assembly-CSharp.dll:.SkinnedMeshCombiner
-980acc20957502cd7f20694e34b5edaa Assembly-CSharp.dll:.itemPickup
-01439f69ab23783ab7af2cce00890849 Assembly-CSharp.dll:Anima2D.Pose
-9c8d1bee3f34d290f2bdcdd901aabdaa Assembly-CSharp.dll:.CharMove
-bb21ecf26db1f02f72231857956971b6 Assembly-CSharp.dll:Anima2D.SpriteMesh
-a0f84ec16aa554d51669d23170cd9f27 Assembly-CSharp.dll:.Restart
-6de27d44fd8221c044725607ba9fb429 Assembly-CSharp.dll:Anima2D.Control
-7c77f968e64ab916995178fea3d2b142 Assembly-CSharp.dll:.Respawnpoint
-61881e1675ac8a58167433745405f195 Assembly-CSharp.dll:.DoorAction
-24bb26e7da03092690ef38ebcd7ec1c0 Assembly-CSharp.dll:.SideCameraFollow
-82f67d42f6f6f642199f8e70786a0e68 Assembly-CSharp.dll:UnityChan.SpringManager
-27c92c39db77ae23b27ecd403c424843 Assembly-CSharp.dll:UnityChan.SpringBone
+d0ffb3b85c2bc2616a91064c21622552 Assembly-CSharp.dll:.Levelwechsel_Instant
+0686f8f33d7576f2ee68363f59d0b2c0 Assembly-CSharp.dll:.Gegner_Hill_City
