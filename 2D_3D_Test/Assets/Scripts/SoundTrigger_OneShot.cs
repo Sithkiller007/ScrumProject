@@ -47,5 +47,16 @@ public class SoundTrigger_OneShot : MonoBehaviour {
             CharMove move = GameObject.FindWithTag("Player").GetComponent<CharMove>();
             move.canMove = true;
         }
+<<<<<<< HEAD
+=======
+        else if(audio.isPlaying && GameObject.FindWithTag("Player").GetComponent<BlueprintMove>())
+        {
+            GameObject.FindWithTag("Player").GetComponent<BlueprintMove>().canMove = false;
+        }
+        else if(GameObject.FindWithTag("Player").GetComponent<BlueprintMove>())
+        {
+            GameObject.FindWithTag("Player").GetComponent<BlueprintMove>().canMove = true;
+        }
+>>>>>>> master
 	}
 }

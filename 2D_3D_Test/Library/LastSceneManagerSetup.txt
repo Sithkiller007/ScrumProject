@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Blueprint_Bank_1.OG.unity
+=======
+- path: Assets/Scenes/Level 1.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
