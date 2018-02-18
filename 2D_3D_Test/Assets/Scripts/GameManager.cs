@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public bool itempickedup;
     public GameObject player;
     public Transform resetpoint;
+    public AudioSource soundPlaying;
 
     void Awake()
     {
