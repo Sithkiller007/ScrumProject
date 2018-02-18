@@ -6,6 +6,12 @@ public class CheckPoint : MonoBehaviour
 {
 
     public bool checkpointReached;
+<<<<<<< HEAD
+=======
+    public GameObject Lampe1;
+    public GameObject Lampe2;
+
+>>>>>>> master
     // Use this for initialization
     void Start()
     {
@@ -15,7 +21,20 @@ public class CheckPoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
 
+=======
+        if (checkpointReached)
+        {
+            Lampe1.SetActive(true);
+            Lampe2.SetActive(true);
+        }
+        else
+        {
+            Lampe1.SetActive(false);
+            Lampe2.SetActive(false);
+        }
+>>>>>>> master
     }
     void OnTriggerEnter(Collider other)
     {

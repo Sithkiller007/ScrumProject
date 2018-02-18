@@ -9,6 +9,10 @@ public class BlueprintMove : MonoBehaviour
     private Rigidbody rigidbod;
     public Vector3 respawnPoint;
     public float Pfeil = 90f;
+<<<<<<< HEAD
+=======
+    //public bool canMove;
+>>>>>>> master
 
     void Start()
     {
@@ -32,7 +36,11 @@ public class BlueprintMove : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
+<<<<<<< HEAD
         if (!Input.GetButton("Fire1"))
+=======
+        if (!Input.GetButton("Fire1") /*&& canMove*/)
+>>>>>>> master
         {
             transform.Translate(new Vector3(0, 0, -v) * Time.deltaTime * moveSpeed);
             transform.Translate(new Vector3(-h, 0, 0) * Time.deltaTime * moveSpeed);
@@ -42,6 +50,7 @@ public class BlueprintMove : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+<<<<<<< HEAD
 
         if (v < 0)
         {
@@ -75,5 +84,43 @@ public class BlueprintMove : MonoBehaviour
         {
             Pfeil = 135;
         }
+=======
+        //if (canMove)
+        //{
+
+            if (v < 0)
+            {
+                Pfeil = 270;
+            }
+            if (v > 0)
+            {
+                Pfeil = 90;
+            }
+            if (h < 0)
+            {
+                Pfeil = 0;
+            }
+            if (h > 0)
+            {
+                Pfeil = 180;
+            }
+            if (v < 0 && h < 0)
+            {
+                Pfeil = 315;
+            }
+            if (v < 0 && h > 0)
+            {
+                Pfeil = 225;
+            }
+            if (v > 0 && h < 0)
+            {
+                Pfeil = 45;
+            }
+            if (v > 0 && h > 0)
+            {
+                Pfeil = 135;
+            }
+        //}
+>>>>>>> master
     }
 }

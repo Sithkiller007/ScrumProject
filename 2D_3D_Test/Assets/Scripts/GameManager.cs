@@ -3,7 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Linq;
+<<<<<<< HEAD
 using UnityEditor;
+=======
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+>>>>>>> master
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +21,8 @@ public class GameManager : MonoBehaviour
     public bool menuOpen = false;
     public Text hint;
     public bool itempickedup;
+    public GameObject player;
+    public Transform resetpoint;
 
     void Awake()
     {
@@ -69,9 +77,14 @@ public class GameManager : MonoBehaviour
             inGameMenu.enabled = true;
             menuOpen = true;
         }
+    }
 
-
-
+    public void Sterben()
+    {
+       if(player && resetpoint)
+        {
+            player.transform.position = resetpoint.position;
+        }
     }
 
 }

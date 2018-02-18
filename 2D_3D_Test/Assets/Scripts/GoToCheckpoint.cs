@@ -1,7 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEditor;
+=======
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+>>>>>>> master
 using UnityEngine.UI;
 
 public class GoToCheckpoint : MonoBehaviour
