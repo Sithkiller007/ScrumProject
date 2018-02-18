@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public bool menuOpen = false;
     public Text hint;
     public bool itempickedup;
+    public GameObject player;
+    public Transform resetpoint;
 
     void Awake()
     {
@@ -71,9 +73,14 @@ public class GameManager : MonoBehaviour
             inGameMenu.enabled = true;
             menuOpen = true;
         }
+    }
 
-
-
+    public void Sterben()
+    {
+       if(player && resetpoint)
+        {
+            player.transform.position = resetpoint.position;
+        }
     }
 
 }

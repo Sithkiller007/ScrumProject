@@ -22,6 +22,8 @@ public class CharMove : MonoBehaviour
     public int schlaege = 2;
     public bool canMove = true;
     public Vector3 respawnPoint;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
     //Sound-Teil
     public AudioClip jumpClip;
@@ -181,7 +183,7 @@ public class CharMove : MonoBehaviour
         if (canMove && Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
         {
             jumping = true;
-            GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
+            GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
         }
         else if (canMove && Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
         {
@@ -255,6 +257,10 @@ public class CharMove : MonoBehaviour
         {
             jumping = false;
         }
+        if (rigidbod.velocity.y < 0)
+        {
+            rigidbod.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
 
     }
     private void Update()
@@ -269,6 +275,8 @@ public class CharMove : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
             caps.transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        
     }
     void Sterben()
     {

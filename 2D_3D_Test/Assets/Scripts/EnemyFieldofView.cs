@@ -55,6 +55,7 @@ public class EnemyFieldofView : MonoBehaviour {
                 beep.Play();
                 beepPlayed = true;
             }
+            GameManager.instance.Sterben();
         }
         else
         {
