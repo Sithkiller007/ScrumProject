@@ -25,7 +25,7 @@ Leveldesign
 Sven Berzellis
 Johannes Malev
 
-Programmierung
+Programming
 Daniel Deuringer
 Johannes Malev
 
@@ -41,7 +41,7 @@ Max Haen
 Katharina Hammon
 Jennifer Weiﬂ
 
-Git-Hub
+Git-Master
 Daniel Deuringer
 
 Cut-Szenes
