@@ -8,6 +8,7 @@ using UnityEditor;
 #endif
 using UnityEngine.UI;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
