@@ -20,10 +20,7 @@ public class MoveTo : MonoBehaviour
         //agent.autoBraking = false;
         GotoNextPoint();
         target = GameObject.FindWithTag("Player").transform;
-<<<<<<< HEAD
-=======
         Debug.Log(target);
->>>>>>> master
         //eyecolor = GetComponentInChildren<Light>();
     }
 
@@ -39,13 +36,9 @@ public class MoveTo : MonoBehaviour
     {
         if (target)
         {
-<<<<<<< HEAD
-            float disttoTarget = Vector3.Distance(transform.position, target.transform.position);
-=======
             //Debug.Log("playerinrange");
             float disttoTarget = Vector3.Distance(transform.position * 100, target.transform.position *100 );
             //Debug.Log(disttoTarget);
->>>>>>> master
             if (disttoTarget <= followdis)
             {
                 agent.destination = target.position;

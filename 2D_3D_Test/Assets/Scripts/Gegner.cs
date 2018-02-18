@@ -30,14 +30,9 @@ public class Gegner : MonoBehaviour
         if (other.gameObject.tag == "Finish")
         {
             tod.Play();
-<<<<<<< HEAD
-            rend.enabled = false;
-            coll.enabled = false;
-=======
             //rend.enabled = false;
             this.enabled = false; 
             //coll.enabled = false;
->>>>>>> master
             tot = true;
         }
     }
