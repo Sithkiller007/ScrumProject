@@ -2,23 +2,48 @@ BLACK WATER
 
 
 Product Owner
+Jennifer Weiﬂ
 
-
-Visual Keeper
-
+Vision Keeper
+Katharina Hammon
 
 Scrum Master
+Max Haen
 
+Story and Dialog
+Sven Berzelis
 
-Story
+Voice Acting
+Derek Hill - Daniel Deuringer
+Morgan West - Johannes Malev
+Anna Duval - Jennifer Weiﬂ
 
+Audio Editing
+Max Haen
 
-Gameplay
-
+Leveldesign
+Sven Berzellis
+Johannes Malev
 
 Programmierung
-
+Daniel Deuringer
+Johannes Malev
 
 Animation
+Johannes Malev
 
+3D-Artists
+Katharina Hammon
+Jennifer Weiﬂ
+Max Haen
+
+2D-Artists
+Katharina Hammon
+Jennifer Weiﬂ
+
+Git-Hub
+Daniel Deuringer
+
+Cut-Szenes
+Sven Berzellis
 
