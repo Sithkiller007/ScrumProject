@@ -81,8 +81,7 @@
      <Compile Include="Assets\Scripts\CharacterMove_old.cs" />
      <Compile Include="Assets\Scripts\CharMove.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
-     <Compile Include="Assets\Scripts\CutScene.cs" />
-     <Compile Include="Assets\Scripts\CutSceneIntro.cs" />
+     <Compile Include="Assets\Scripts\Crouch.cs" />
      <Compile Include="Assets\Scripts\DoorAction.cs" />
      <Compile Include="Assets\Scripts\EnemyFieldofView.cs" />
      <Compile Include="Assets\Scripts\EnemySight.cs" />
@@ -112,7 +111,6 @@
      <Compile Include="Assets\Scripts\ToMainMenu.cs" />
      <Compile Include="Assets\Scripts\WennDannCounter.cs" />
      <Compile Include="Assets\Scripts\WennDannSkript.cs" />
-     <None Include="Assets\Zwischensequenzen\Graphics\Quellen_Grafiken.txt" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />
      <None Include="Assets\Anima2D\Version.txt" />
