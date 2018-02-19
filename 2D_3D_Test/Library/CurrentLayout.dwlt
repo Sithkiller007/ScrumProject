@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 51
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -87,7 +87,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 337
+    width: 362
     height: 501
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -248,9 +248,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 337
+    x: 362
     y: 0
-    width: 1024
+    width: 999
     height: 501
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
@@ -480,33 +480,33 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 335
+    width: 360
     height: 480
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e0b3ffff
-    m_LastClickedID: -19488
-    m_ExpandedIDs: a2bcffff1af8ffff9efbffff00000000
+    m_SelectedIDs: 06eafcff
+    m_LastClickedID: -202234
+    m_ExpandedIDs: 6607fdff6807fdff0c0ffdff5834fdffa8a4fdffec1ffeffd029feff3696feff3a96feff6cc8feff50ddffff78deffff7cdeffffaaf0ffffaef0ffff9efbffff000000008a450000aa73000088780000068d00003ca90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Tapete+Treppe 1 (1)
+      m_OriginalName: Tapete+Treppe 1 (1)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -202970
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Level 1
+  - Level_3
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -532,20 +532,20 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 339
+    x: 364
     y: 92
-    width: 1020
+    width: 995
     height: 480
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 55.359629642877216
+  lastFramingTime: 914.8709989116161
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.215931, y: 8.482997, z: -2.25}
+    m_Target: {x: -0.7138672, y: 38.57964, z: 0.54499996}
     speed: 2
-    m_Value: {x: -15.215931, y: 8.482997, z: -2.25}
+    m_Value: {x: -0.7138672, y: 38.57964, z: 0.54499996}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -569,13 +569,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.17630936, y: 0.02863724, z: -0.0051293783, w: -0.9839122}
+    m_Target: {x: -0.3281422, y: -0.34223536, z: 0.12894213, w: -0.87096757}
     speed: 2
-    m_Value: {x: -0.17630936, y: 0.02863724, z: -0.0051293783, w: -0.9839122}
+    m_Value: {x: -0.32814008, y: -0.34223315, z: 0.1289413, w: -0.87096196}
   m_Size:
-    m_Target: 4.6454163
+    m_Target: 588.47906
     speed: 2
-    m_Value: 4.6454163
+    m_Value: 588.47906
   m_Ortho:
     m_Target: 0
     speed: 2
