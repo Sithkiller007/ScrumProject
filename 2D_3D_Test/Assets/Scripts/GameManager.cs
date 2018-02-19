@@ -8,6 +8,7 @@ using UnityEditor;
 #endif
 using UnityEngine.UI;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -17,6 +18,9 @@ public class GameManager : MonoBehaviour
     public bool menuOpen = false;
     public Text hint;
     public bool itempickedup;
+    public GameObject player;
+    public Transform resetpoint;
+    public AudioSource soundPlaying;
 
     void Awake()
     {
@@ -71,9 +75,14 @@ public class GameManager : MonoBehaviour
             inGameMenu.enabled = true;
             menuOpen = true;
         }
+    }
 
-
-
+    public void Sterben()
+    {
+       if(player && resetpoint)
+        {
+            player.transform.position = resetpoint.position;
+        }
     }
 
 }
