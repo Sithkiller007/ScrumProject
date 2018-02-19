@@ -24,6 +24,8 @@ public class CharMove : MonoBehaviour
     public Vector3 respawnPoint;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    public float raylength = 2f;
+    public Transform point;
 
     //Sound-Teil
     public AudioClip jumpClip;
@@ -147,6 +149,7 @@ public class CharMove : MonoBehaviour
     }
     void FixedUpdate()
     {
+        Ray ray = new Ray(point.transform.position, Vector3.left);
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         float hinput = rigidbod.velocity.x;
@@ -161,10 +164,12 @@ public class CharMove : MonoBehaviour
         if(h < 0)
         {
             isFacingLeft = true;
+            //ray = new Ray(point.transform.position, Vector3.left);
         }
         else if(h > 0)
         {
             isFacingLeft = false;
+            //ray = new Ray(point.transform.position, Vector3.right);
         }
 
 
@@ -236,10 +241,17 @@ public class CharMove : MonoBehaviour
         if (canMove && Input.GetKeyDown("f"))
         {
             anim.Play("attack", -1, 0f);
-
             //Sound einfügen
             hittingSource.Play();
             hittingSource.loop = false;
+            if (Physics.Raycast(ray, out hit, raylength))
+            {
+                Debug.Log("true");
+                if (hit.collider.tag == "Enemy")
+                {
+                    hit.collider.gameObject.SetActive(false);
+                }
+            }
         }
         if (canMove && Input.GetButtonDown("Crouch") && !isCrouched)
         {
