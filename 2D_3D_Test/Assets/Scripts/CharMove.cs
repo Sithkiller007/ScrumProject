@@ -76,7 +76,10 @@ public class CharMove : MonoBehaviour
             isClimbing = true;
             rigidbod.useGravity = false;
             rigidbod.constraints = RigidbodyConstraints.FreezePositionX;
+            rigidbod.constraints = RigidbodyConstraints.FreezePositionZ;
             rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
+            rigidbod.velocity = new Vector3(0,0,0);
+            spruenge = 2;
 
             //Sound abspielen
             ladderSource.Play();
@@ -185,7 +188,7 @@ public class CharMove : MonoBehaviour
                 }
             }
         }*/
-        if (canMove && Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump)
+        if (canMove && Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump && !isClimbing)
         {
             jumping = true;
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
@@ -211,18 +214,19 @@ public class CharMove : MonoBehaviour
                 h = 0.15f;
             }
         }
-        else if (canMove && Input.GetKey(KeyCode.Space) && isClimbing && !isCrouched && !wallJump)
+        else if (Input.GetKey(KeyCode.Space) && isClimbing && !isCrouched && !wallJump)
         {
             rigidbod.useGravity = true;
+            jumping = true;
             if (isFacingLeft)
             {
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(new Vector3(1, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
                 isFacingLeft = false;
                 h = -0.15f;
             }
             else
             {
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(new Vector3(-1, 1, 0) * jumpSpeed / 2, ForceMode.Impulse);
                 isFacingLeft = true;
                 h = 0.15f;
             }
@@ -246,7 +250,6 @@ public class CharMove : MonoBehaviour
             hittingSource.loop = false;
             if (Physics.Raycast(ray, out hit, raylength))
             {
-                Debug.Log("true");
                 if (hit.collider.tag == "Enemy")
                 {
                     hit.collider.gameObject.SetActive(false);
