@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 139
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,19 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Maya-Assets/Plakate und Tafeln
+    - Assets/Maya-Assets/Laternen
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Maya-Assets/Plakate und Tafeln
+  - Assets/Maya-Assets/Laternen
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jenny\Desktop\SCRUM-BlackWater\ScrumProject\2D_3D_Test
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 257.99988}
-    m_SelectedIDs: f22e0000
-    m_LastClickedID: 12018
-    m_ExpandedIDs: 000000005a290000d02a0000d22b00008e2c00005e2e0000b63400001e370000d4420000424400008a69000000ca9a3bffffff7f
+    m_SelectedIDs: 0c2b0000
+    m_LastClickedID: 11020
+    m_ExpandedIDs: 000000005a290000d02a0000d22b00008e2c00005e2e0000b63400001e370000d4420000424400002a58000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a290000d02a0000d22b00008e2c00005e2e0000f22e0000b63400001e370000d4420000424400008a690000
+    m_ExpandedIDs: 000000005a290000d02a0000d22b00008e2c00005e2e0000b63400001e370000d4420000424400002a580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -484,29 +484,29 @@ MonoBehaviour:
     height: 419
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1854}
-    m_SelectedIDs: 3c470000
-    m_LastClickedID: 18236
-    m_ExpandedIDs: 9c2bfcff5468fdff80bfffff84bfffff62d6ffff66d6ffffe6e2ffffc2e4ffffc6e4ffff76f7ffff7af7ffff9efbffff000000003c47000060470000
+    scrollPos: {x: 0, y: 704}
+    m_SelectedIDs: 18e1ffff
+    m_LastClickedID: -7912
+    m_ExpandedIDs: 5e86feffcadeffffe4defffff8deffff50dfffff52dfffff14e1ffff18e1ffff14eeffff16eeffff18eeffff2af8ffff60faffff64faffff9efbffff000000004e450000c2450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Cube (1)
+      m_OriginalName: Cube (1)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 17874
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Level 1_PostBlueprint
+  - Level_3
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -538,14 +538,14 @@ MonoBehaviour:
     height: 419
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1478.0008759877046
+  lastFramingTime: 178.16803150750036
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -53.85347, y: 5.00037, z: 7.8594475}
+    m_Target: {x: 3.774183, y: 20.991856, z: 1.6234512}
     speed: 2
-    m_Value: {x: -53.85347, y: 5.00037, z: 7.8594475}
+    m_Value: {x: 3.774183, y: 20.991856, z: 1.6234512}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -569,13 +569,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.22677477, y: -0.07733407, z: 0.01805886, w: 0.9707143}
+    m_Target: {x: 0.10923311, y: 0.02981786, z: -0.0032858585, w: 0.9935773}
     speed: 2
-    m_Value: {x: 0.22677255, y: -0.077333316, z: 0.018058684, w: 0.9707048}
+    m_Value: {x: 0.1092316, y: 0.029817449, z: -0.0032858131, w: 0.99356353}
   m_Size:
-    m_Target: 55.828613
+    m_Target: 46.4654
     speed: 2
-    m_Value: 55.828613
+    m_Value: 46.4654
   m_Ortho:
     m_Target: 0
     speed: 2
