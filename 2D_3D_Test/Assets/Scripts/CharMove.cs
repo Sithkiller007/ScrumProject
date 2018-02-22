@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CharMove : MonoBehaviour
@@ -26,6 +27,7 @@ public class CharMove : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     public float raylength = 2f;
     public Transform point;
+    public Transform secondStart;
 
     //Sound-Teil
     public AudioClip jumpClip;
@@ -45,6 +47,11 @@ public class CharMove : MonoBehaviour
 
     void Start()
     {
+        Scene actScene = SceneManager.GetActiveScene();
+        if (actScene.buildIndex == 2 && GameManager.instance.secondTime && secondStart)
+        {
+            transform.position = secondStart.position;
+        }
         rigidbod = GetComponent<Rigidbody>();
         respawnPoint = transform.localPosition;
         //distToGround = GetComponent<Collider>().bounds.extents.y;

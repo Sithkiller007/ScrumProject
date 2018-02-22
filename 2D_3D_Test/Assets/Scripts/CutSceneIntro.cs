@@ -10,6 +10,7 @@ public class CutSceneIntro : MonoBehaviour {
     public MovieTexture cutScene;
 
     private AudioSource audio;
+    public int nextSceneIndex;
 
 	void Start () {
 
@@ -35,7 +36,7 @@ public class CutSceneIntro : MonoBehaviour {
         }
         if (!cutScene.isPlaying)            //sobald Cutscene nicht mehr spielt lädt die nächste Szene
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(nextSceneIndex);
         }
 	}
     void OnGUI()
