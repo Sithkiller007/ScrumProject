@@ -11,6 +11,12 @@ public class Levelwechsel : MonoBehaviour
     Color vis = new Color(1f, 1f, 1f, 255f);
     Color invis = new Color(1f, 1f, 1f, 0f);
     bool alreadyshown = false;
+    Scene actScene;
+
+    void Start()
+    {
+        actScene = SceneManager.GetActiveScene();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -43,6 +49,8 @@ public class Levelwechsel : MonoBehaviour
             hintshown = false;
             GameManager.instance.hint.color = invis;
             alreadyshown = true;
+            if(actScene.buildIndex == 2)
+            GameManager.instance.secondTime = true;
             SceneManager.LoadScene(level, LoadSceneMode.Single);
         }
     }

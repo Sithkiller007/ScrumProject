@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level 1_PostBlueprint.unity
+- path: Assets/Scenes/Cutscene 3 _Hill lebt.unity
   isLoaded: 1
   isActive: 1

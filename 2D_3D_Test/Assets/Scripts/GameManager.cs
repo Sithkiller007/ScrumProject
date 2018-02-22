@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public Transform resetpoint;
     public AudioSource soundPlaying;
+    public bool secondTime;
 
     void Awake()
     {
@@ -43,6 +44,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindWithTag("Player");
+        Scene actScene = SceneManager.GetActiveScene();
         inGameMenu.enabled = false;
     }
 
