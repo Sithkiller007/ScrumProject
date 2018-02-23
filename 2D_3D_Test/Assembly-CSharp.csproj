@@ -122,9 +122,6 @@
      <None Include="Assets\Anima2D\Licenses.txt" />
      <None Include="Assets\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />
      <None Include="Assets\Anima2D\Readme.txt" />
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/sithk/Documents/GitHub/ScrumProject/2D_3D_Test/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

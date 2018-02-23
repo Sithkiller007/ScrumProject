@@ -53,9 +53,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscene 3 _Hill stirbt.unity
     guid: 623fdddcd27e7b547b6711491cccced6
-  - enabled: 1
-    path: Assets/Scenes/Startbildschirm_Nach Durchspielen.unity
-    guid: b7f763caacc2ca94790c51cb5e84ef34
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Cutscene 2_Zwischensequenz.unity
     guid: b0e81f8eb9c99224ebd0d33cae134a52
