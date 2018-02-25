@@ -105,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4371528459674910}
   - component: {fileID: 65921724287675108}
+  - component: {fileID: 65472107823545296}
   m_Layer: 0
   m_Name: Feuerleiter
   m_TagString: Ladder
@@ -366,8 +367,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1394300572895838}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.809999, y: 11.184, z: -6.554561}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 23.14, y: 15.58, z: -0.49}
   m_LocalScale: {x: 1, y: 1.5615946, z: 1}
   m_Children:
   - {fileID: 4714095453544462}
@@ -1120,6 +1121,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1554219838111922}
   m_Mesh: {fileID: 4300024, guid: 171032bb99a8263478d32135e6ed2d8c, type: 3}
+--- !u!65 &65472107823545296
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1394300572895838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0914879, y: 4.838964, z: 1.4051504}
+  m_Center: {x: 0.05057335, y: 0.5503551, z: -0.54567003}
 --- !u!65 &65921724287675108
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1130,5 +1143,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5376034, y: 5.27399, z: 6.194177}
-  m_Center: {x: 0.51936054, y: 0.6823748, z: 0.8059585}
+  m_Size: {x: 0.5865097, y: 5.400783, z: 6.194177}
+  m_Center: {x: 0.5438137, y: 0.618979, z: 0.8059585}
