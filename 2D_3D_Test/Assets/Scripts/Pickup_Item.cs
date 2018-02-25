@@ -11,7 +11,8 @@ public class Pickup_Item : MonoBehaviour {
 
         if (other.tag == "Player")
         {
-            other.setActive = false;
+            gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
         }
     }
 }

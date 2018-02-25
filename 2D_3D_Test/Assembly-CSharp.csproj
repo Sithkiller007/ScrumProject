@@ -97,6 +97,7 @@
      <Compile Include="Assets\Scripts\LoadButton.cs" />
      <Compile Include="Assets\Scripts\MoveTo.cs" />
      <Compile Include="Assets\Scripts\Pfeilrichtung.cs" />
+     <Compile Include="Assets\Scripts\Pickup_Item.cs" />
      <Compile Include="Assets\Scripts\playerAttack.cs" />
      <Compile Include="Assets\Scripts\Quit.cs" />
      <Compile Include="Assets\Scripts\RemoveWindow.cs" />

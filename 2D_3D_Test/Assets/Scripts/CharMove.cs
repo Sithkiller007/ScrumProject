@@ -81,7 +81,7 @@ public class CharMove : MonoBehaviour
         if (other.gameObject.tag == "Ladder")
         {
             isClimbing = true;
-            rigidbod.useGravity = false;
+            //rigidbod.useGravity = false;
             rigidbod.constraints = RigidbodyConstraints.FreezePositionX;
             rigidbod.constraints = RigidbodyConstraints.FreezePositionZ;
             rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
@@ -119,7 +119,7 @@ public class CharMove : MonoBehaviour
         if (other.gameObject.tag == "Ladder")
         {
             isClimbing = false;
-            rigidbod.useGravity = true;
+            //rigidbod.useGravity = true;
 
             //Sound abspielen
             ladderSource.Stop();
@@ -180,6 +180,15 @@ public class CharMove : MonoBehaviour
         {
             isFacingLeft = false;
             //ray = new Ray(point.transform.position, Vector3.right);
+        }
+
+        if (isClimbing)
+        {
+            rigidbod.useGravity = false;
+        }
+        else if (!isClimbing)
+        {
+            rigidbod.useGravity = true;
         }
 
 
