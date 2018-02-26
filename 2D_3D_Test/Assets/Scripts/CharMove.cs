@@ -71,7 +71,7 @@ public class CharMove : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Wand"))
+        if (other.gameObject.tag == "Wand")
         {
             wallJump = true;
 
@@ -112,7 +112,7 @@ public class CharMove : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Wand"))
+        if (other.gameObject.tag == "Wand")
         {
             spruenge -= spruenge;
             wallJump = false;
@@ -207,12 +207,12 @@ public class CharMove : MonoBehaviour
                 }
             }
         }*/
-        if (canMove && Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump && !isClimbing)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouched && !wallJump && !isClimbing)
         {
             jumping = true;
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
         }
-        else if (canMove && Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
+        else if (Input.GetKey(KeyCode.Space) && wallJump && !isCrouched && !isClimbing && spruenge > 0)
         {
             jumping = true;
             spruenge--;
@@ -251,7 +251,7 @@ public class CharMove : MonoBehaviour
             }
         }
 
-        if (canMove && !Input.GetButton("Fire1"))
+        if (!Input.GetButton("Fire1") && !isClimbing)
         {
             //transform.Translate(new Vector3(0, 0, v) * Time.deltaTime * moveSpeed);
             transform.Translate(new Vector3(h, 0, 0) * Time.deltaTime * moveSpeed);
@@ -312,12 +312,12 @@ public class CharMove : MonoBehaviour
 
         
     }
-    void Sterben()
+    /*void Sterben()
     {
         transform.position = respawnPoint;
         schlaege = 2;
     }
-    /*private void Flip(float h)
+    private void Flip(float h)
     {
         Vector3 theScale = transform.localScale;
 

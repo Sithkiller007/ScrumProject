@@ -304,7 +304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4083668266437820}
   - component: {fileID: 114103141818304524}
-  - component: {fileID: 65948524644188948}
   - component: {fileID: 114052613334603124}
   m_Layer: 0
   m_Name: R Hand
@@ -541,7 +540,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1874740225813208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 0.05, z: -0.02}
+  m_LocalPosition: {x: -2.9, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4476392247432418}
@@ -878,13 +877,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1322355028586580}
-  m_LocalRotation: {x: 0, y: 0, z: -0.6917714, w: 0.72211653}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5867717, w: 0.80975235}
   m_LocalPosition: {x: 0.83873963, y: -0.000000006513801, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4655714881715526}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -26.390001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 71.857}
 --- !u!4 &4823193802489940
 Transform:
   m_ObjectHideFlags: 1
@@ -981,18 +980,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2514534, y: 0.5776496, z: 0.49338913}
   m_Center: {x: -0.11995125, y: -1.5333169, z: -26.431452}
---- !u!65 &65948524644188948
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1695922754035150}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82087915505609550
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1004,7 +991,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 50dbe7086c798d14cac4cc44ec6474da, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1084,7 +1071,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 733b37adf638885448756eb2eb1916fc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1164,7 +1151,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 246bdc5a558552c41a3bf67b8f1f2f2f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1244,7 +1231,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0ef7c66694b8ac246ae655868f77c5b6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1324,7 +1311,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b60733e67530aa442b922d82a53c83cb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1639,16 +1626,16 @@ MonoBehaviour:
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4609098455947694}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.9997562, w: 0.022080133}
+      solverRotation: {x: 0, y: 0, z: 0.9997562, w: 0.022080371}
       defaultLocalRotation: {x: 0, y: 0, z: 0.879573, w: 0.47576404}
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4534981558588480}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.1998281, w: 0.979831}
+      solverRotation: {x: 0, y: 0, z: -0.19982758, w: 0.9798311}
       defaultLocalRotation: {x: 0, y: 0, z: -0.42902085, w: 0.9032946}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -2.7199998, y: 2.9200006, z: -0.19000007}
+    targetPosition: {x: -2.7199998, y: 1.9700004, z: -0.17000008}
     flip: 1
 --- !u!114 &114392014884258518
 MonoBehaviour:
@@ -1913,16 +1900,16 @@ MonoBehaviour:
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4202443941780888}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.9931172, w: 0.11712471}
+      solverRotation: {x: 0, y: 0, z: -0.99311733, w: 0.11712376}
       defaultLocalRotation: {x: 0, y: 0, z: -0.9857631, w: 0.16814044}
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4655714881715526}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.06843824, w: 0.99765533}
+      solverRotation: {x: 0, y: 0, z: 0.06843977, w: 0.9976553}
       defaultLocalRotation: {x: 0, y: 0, z: 0.017102873, w: 0.9998538}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -2.2399993, y: 1.1500001, z: -0.19000007}
+    targetPosition: {x: -2.2399993, y: 0.20000009, z: -0.17000008}
     flip: 0
 --- !u!114 &114811803181818628
 MonoBehaviour:
@@ -1959,7 +1946,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: -0.42701608, w: 0.90424407}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -2, y: 2.64, z: -0.19000007}
+    targetPosition: {x: -2, y: 1.69, z: -0.17000008}
     flip: 1
 --- !u!114 &114848087982014710
 MonoBehaviour:
@@ -2019,16 +2006,16 @@ MonoBehaviour:
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4472360724361652}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.9993806, w: -0.035191227}
+      solverRotation: {x: 0, y: 0, z: -0.9993806, w: -0.035191108}
       defaultLocalRotation: {x: 0, y: 0, z: -0.99996436, w: -0.0084492555}
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4934326960016728}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.16382246, w: 0.98648983}
+      solverRotation: {x: 0, y: 0, z: 0.163822, w: 0.9864899}
       defaultLocalRotation: {x: 0, y: 0, z: 0.06339434, w: 0.9979886}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -2.87, y: 1.15, z: -0.19000007}
+    targetPosition: {x: -2.87, y: 0.19999997, z: -0.17000008}
     flip: 0
 --- !u!136 &136644013826185178
 CapsuleCollider:
@@ -2040,9 +2027,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.43603134
-  m_Height: 2.5195293
+  m_Height: 3.549663
   m_Direction: 1
-  m_Center: {x: -0.11549103, y: -0.5306859, z: -26.44955}
+  m_Center: {x: -0.11549103, y: -0.01561904, z: -26.44955}
 --- !u!137 &137078577915666348
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
