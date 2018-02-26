@@ -28,6 +28,7 @@ public class CharMove : MonoBehaviour
     public float raylength = 2f;
     public Transform point;
     public Transform secondStart;
+    Vector3 raydir;
 
     //Sound-Teil
     public AudioClip jumpClip;
@@ -159,7 +160,7 @@ public class CharMove : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Ray ray = new Ray(point.transform.position, Vector3.left);
+        Ray ray = new Ray(point.transform.position, raydir);
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         float hinput = rigidbod.velocity.x;
@@ -174,11 +175,13 @@ public class CharMove : MonoBehaviour
         if(h < 0)
         {
             isFacingLeft = true;
+            raydir = Vector3.left;
             //ray = new Ray(point.transform.position, Vector3.left);
         }
         else if(h > 0)
         {
             isFacingLeft = false;
+            raydir = Vector3.right;
             //ray = new Ray(point.transform.position, Vector3.right);
         }
 

@@ -15,7 +15,7 @@ public class SideCameraFollow : MonoBehaviour {
         nullpos = player.position.y + 3.5f;
         Scene actScene = SceneManager.GetActiveScene();
         //statt 16 bitte den BuildIndex von Level 2_2 einfügen
-        if (actScene.buildIndex == 16)
+        if (actScene.buildIndex == 9)
         {
             normal = false;
         }
