@@ -8,7 +8,7 @@ public class Levelwechsel : MonoBehaviour
     public int level;
     public int altLevel;
     public string hint = "Press E to open";
-    bool hintshown;
+    public bool hintshown;
     Color vis = new Color(248f, 255f, 255f, 255f);
     Color invis = new Color(1f, 1f, 1f, 0f);
     bool alreadyshown = false;
@@ -59,6 +59,15 @@ public class Levelwechsel : MonoBehaviour
         }
         else
         {
+            if (hintshown)
+            {
+                GameManager.instance.hint.text = hint;
+                GameManager.instance.hint.color = vis;
+            }
+            else if (!hintshown)
+            {
+                GameManager.instance.hint.color = invis;
+            }
             if (Input.GetButton("E") && hintshown)
             {
                 hintshown = false;

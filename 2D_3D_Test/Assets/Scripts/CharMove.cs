@@ -21,7 +21,7 @@ public class CharMove : MonoBehaviour
     public bool isFacingLeft;
     public int spruenge = 2;
     public int schlaege = 2;
-    public bool canMove = true;
+    //public bool canMove = true;
     public Vector3 respawnPoint;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
@@ -67,6 +67,7 @@ public class CharMove : MonoBehaviour
         landSource.clip = landClip;
         hittingSource.clip = hittingClip;
         //walkingSource.clip = walkingClip;
+        rigidbod.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
 
     }
     private void OnTriggerEnter(Collider other)
@@ -83,9 +84,7 @@ public class CharMove : MonoBehaviour
         {
             isClimbing = true;
             //rigidbod.useGravity = false;
-            rigidbod.constraints = RigidbodyConstraints.FreezePositionX;
-            rigidbod.constraints = RigidbodyConstraints.FreezePositionZ;
-            rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
+            //rigidbod.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
             rigidbod.velocity = new Vector3(0,0,0);
             spruenge = 2;
 
@@ -99,7 +98,7 @@ public class CharMove : MonoBehaviour
         {
             spruenge = 2;
             isGrounded = true;
-            rigidbod.constraints = RigidbodyConstraints.FreezeRotation;
+            //rigidbod.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
 
             //Sound abspielen
             landSource.Play();
@@ -261,7 +260,7 @@ public class CharMove : MonoBehaviour
             transform.Translate(new Vector3(0, v, 0) * Time.deltaTime * moveSpeed/2);
 
         }
-        if (canMove && Input.GetKeyDown("f"))
+        if (Input.GetKeyDown("f"))
         {
             anim.Play("attack", -1, 0f);
             //Sound einfügen
@@ -275,13 +274,13 @@ public class CharMove : MonoBehaviour
                 }
             }
         }
-        if (canMove && Input.GetButtonDown("Crouch") && !isCrouched)
+        if (Input.GetButtonDown("Crouch") && !isCrouched)
         {
             isCrouched = true;
             //caps.enabled = false;
             anim.SetBool("isCrouched", true);
         }
-        if (canMove && Input.GetButtonUp("Crouch") && isCrouched)
+        if (Input.GetButtonUp("Crouch") && isCrouched)
         {
             isCrouched = false;
             //caps.enabled = true;
