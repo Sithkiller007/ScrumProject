@@ -4173,12 +4173,12 @@ Prefab:
     - target: {fileID: 114583335957044882, guid: 332f2eec2a1effa42af1779b1724caee,
         type: 2}
       propertyPath: level
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114583335957044882, guid: 332f2eec2a1effa42af1779b1724caee,
         type: 2}
       propertyPath: hint
-      value: "Dr\xFCcke \"E\" um zum n\xE4chsten Level zu gelangen"
+      value: "Dr\xFCcke \"E\" um zu wechseln"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}

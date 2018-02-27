@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.083
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12675253, g: 0.12676609, b: 0.12689051, a: 0.083}
+  m_IndirectSpecularColor: {r: 0.12674835, g: 0.1267662, b: 0.12688938, a: 0.083}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -891,6 +891,36 @@ Prefab:
     - target: {fileID: 114250274593097062, guid: 46825ff2d489f364e94c068b2b12b2fb,
         type: 2}
       propertyPath: m_Colors.m_ColorMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819796150699660, guid: 46825ff2d489f364e94c068b2b12b2fb,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819796150699660, guid: 46825ff2d489f364e94c068b2b12b2fb,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819796150699660, guid: 46825ff2d489f364e94c068b2b12b2fb,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114212983058186888, guid: 46825ff2d489f364e94c068b2b12b2fb,
+        type: 2}
+      propertyPath: m_UiScaleMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224335071304529512, guid: 46825ff2d489f364e94c068b2b12b2fb,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 88.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819796150699660, guid: 46825ff2d489f364e94c068b2b12b2fb,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -28025,7 +28055,7 @@ Prefab:
     - target: {fileID: 114583335957044882, guid: 332f2eec2a1effa42af1779b1724caee,
         type: 2}
       propertyPath: hint
-      value: "Dr\xFCcke \"E\" zum aktivieren"
+      value: "Dr\xFCcke \"E\" um zu wechseln"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}
@@ -32922,7 +32952,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 4
-  hint: Press E to get to the next Level
+  altLevel: 0
+  hint: "Dr\xFCcke \"E\" um zu wechseln"
 --- !u!1 &1745190178
 GameObject:
   m_ObjectHideFlags: 0

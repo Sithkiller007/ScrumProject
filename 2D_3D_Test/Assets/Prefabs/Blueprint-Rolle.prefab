@@ -35,7 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4743544558461198}
   - component: {fileID: 65466370356347402}
-  - component: {fileID: 114599886235262724}
+  - component: {fileID: 114942740718613714}
   m_Layer: 0
   m_Name: Blueprint-Rolle
   m_TagString: Untagged
@@ -747,7 +747,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4227464, y: 0.59925884, z: 0.8461929}
   m_Center: {x: 0.0554626, y: -0.20037043, z: 0.076903425}
---- !u!114 &114599886235262724
+--- !u!114 &114942740718613714
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -755,8 +755,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1283397819792354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa808513df15ee4884409482d1e07ad, type: 3}
+  m_Script: {fileID: 11500000, guid: d06b9a5854b09294eac77a4eee6af25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectClip: {fileID: 0}
-  collectSource: {fileID: 0}

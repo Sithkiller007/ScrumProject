@@ -26,10 +26,13 @@ public class MoveTo : MonoBehaviour
 
     void GotoNextPoint()
     {
-        if (points.Count == 0)
-            return;
-        agent.destination = points[destPoint].position;
-        destPoint = (destPoint + 1) % points.Count;
+        if (points != null)
+        {
+            if (points.Count == 0)
+                return;
+            agent.destination = points[destPoint].position;
+            destPoint = (destPoint + 1) % points.Count;
+        }
     }
 
     void Update()
