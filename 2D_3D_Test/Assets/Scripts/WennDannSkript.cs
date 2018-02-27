@@ -10,20 +10,19 @@ public class WennDannSkript : MonoBehaviour
     public GameObject three;
     public GameObject unlockOne;
     public GameObject unlockTwo;
-    //public GameObject unlockTwo; Bei Bedarf unkommentieren und zuweisen, sonst funktioniert das skript nicht
+    public GameObject lockThree;
     /*public bool oneActive = false;
     public bool twoActive = false;
     public bool threeActive = false;*/
     public static int wenndanncounter;
-
-    public bool isActive;
 
 	// Use this for initialization
 	void Start ()
     {
 
         unlockOne.SetActive(false);
-        unlockTwo.SetActive(false);
+        if (unlockTwo != null)
+            unlockTwo.SetActive(false);
 
         //isActive = GetComponentInChildren<activateOne>(oneActive);
 
@@ -38,6 +37,9 @@ public class WennDannSkript : MonoBehaviour
             if(unlockTwo != null)
             {
                 unlockTwo.SetActive(true);
+            }
+            if(lockThree != null){
+                lockThree.SetActive(false);
             }
         }
 	}
