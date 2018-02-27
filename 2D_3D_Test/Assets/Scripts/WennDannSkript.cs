@@ -9,6 +9,7 @@ public class WennDannSkript : MonoBehaviour
     public GameObject two;
     public GameObject three;
     public GameObject unlockOne;
+    public GameObject unlockTwo;
     //public GameObject unlockTwo; Bei Bedarf unkommentieren und zuweisen, sonst funktioniert das skript nicht
     /*public bool oneActive = false;
     public bool twoActive = false;
@@ -22,7 +23,7 @@ public class WennDannSkript : MonoBehaviour
     {
 
         unlockOne.SetActive(false);
-        //unlockTwo.SetActive(false);
+        unlockTwo.SetActive(false);
 
         //isActive = GetComponentInChildren<activateOne>(oneActive);
 
@@ -34,7 +35,10 @@ public class WennDannSkript : MonoBehaviour
 		if (wenndanncounter >= 3)
         {
             unlockOne.SetActive(true);
-            //unlockTwo.SetActive(true);
+            if(unlockTwo != null)
+            {
+                unlockTwo.SetActive(true);
+            }
         }
 	}
 

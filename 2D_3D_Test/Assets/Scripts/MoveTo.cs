@@ -20,7 +20,7 @@ public class MoveTo : MonoBehaviour
         //agent.autoBraking = false;
         GotoNextPoint();
         target = GameObject.FindWithTag("Player").transform;
-        Debug.Log(target);
+        //Debug.Log(target);
         //eyecolor = GetComponentInChildren<Light>();
     }
 

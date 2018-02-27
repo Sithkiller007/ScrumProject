@@ -52,6 +52,8 @@ public class CharMove : MonoBehaviour
         if (actScene.buildIndex == 2 && GameManager.instance.secondTime && secondStart)
         {
             transform.position = secondStart.position;
+            GameManager.instance.level1Block = GameObject.FindWithTag("Level1Block");
+            GameManager.instance.level1Block.gameObject.SetActive(false);
         }
         rigidbod = GetComponent<Rigidbody>();
         respawnPoint = transform.localPosition;

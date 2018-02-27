@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public Transform resetpoint;
     public AudioSource soundPlaying;
     public bool secondTime;
+    bool level1blocked;
+    public GameObject level1Block;
 
     void Awake()
     {
