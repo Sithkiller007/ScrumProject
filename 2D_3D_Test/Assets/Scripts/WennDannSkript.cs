@@ -14,15 +14,16 @@ public class WennDannSkript : MonoBehaviour
     /*public bool oneActive = false;
     public bool twoActive = false;
     public bool threeActive = false;*/
-    public static int wenndanncounter;
+    public static int wenndanncounter = 0;
 
 	// Use this for initialization
 	void Start ()
     {
 
-        unlockOne.SetActive(false);
+        //unlockOne.SetActive(false);
         if (unlockTwo != null)
             unlockTwo.SetActive(false);
+        wenndanncounter = 0;
 
         //isActive = GetComponentInChildren<activateOne>(oneActive);
 
