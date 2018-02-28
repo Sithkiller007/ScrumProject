@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public bool secondTime;
     bool level1blocked;
     public GameObject level1Block;
+    public bool cutsceneplaying;
 
     void Awake()
     {
@@ -59,6 +60,10 @@ public class GameManager : MonoBehaviour
     //Update is called every frame.
     void Update()
     {
+        if (GameObject.FindWithTag("Reset"))
+            resetpoint = GameObject.FindWithTag("Reset").transform;
+        if(GameObject.FindWithTag("Player"))
+        player = GameObject.FindWithTag("Player");
         if (sideCamera)
         {
             //GameObject.Find("Player").transform.position.y = 0.27;
@@ -70,12 +75,12 @@ public class GameManager : MonoBehaviour
             //GameObject.Find("Player").GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
 
-        if (Input.GetButtonDown("Cancel") && menuOpen == true)
+        if (Input.GetButtonDown("Cancel") && menuOpen == true && !cutsceneplaying)
         {
             inGameMenu.enabled = false;
             menuOpen = false;
         }
-        else if (Input.GetButtonDown("Cancel") && menuOpen == false && SceneManager.GetActiveScene().buildIndex != 0)
+        else if (Input.GetButtonDown("Cancel") && menuOpen == false && SceneManager.GetActiveScene().buildIndex != 0 && !cutsceneplaying)
         {
             inGameMenu.enabled = true;
             menuOpen = true;
@@ -88,6 +93,12 @@ public class GameManager : MonoBehaviour
         {
             player.transform.position = resetpoint.position;
         }
+    }
+
+    public void CloseMenu()
+    {
+        inGameMenu.enabled = false;
+        menuOpen = false;
     }
 
 }

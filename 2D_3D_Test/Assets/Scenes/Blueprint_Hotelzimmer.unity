@@ -260,6 +260,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1498409250013888, guid: 1ea9eb0da1b79a243aad1486621bf92b, type: 2}
+      propertyPath: m_TagString
+      value: Reset
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ea9eb0da1b79a243aad1486621bf92b, type: 2}
   m_IsPrefabParent: 0
@@ -2168,7 +2172,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4509452181720290, guid: fb604b5f10b72154aaa6e5989e2c75b4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.30000082
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4509452181720290, guid: fb604b5f10b72154aaa6e5989e2c75b4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4039,7 +4043,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4509452181720290, guid: fb604b5f10b72154aaa6e5989e2c75b4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.30000082
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4509452181720290, guid: fb604b5f10b72154aaa6e5989e2c75b4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4960,6 +4964,10 @@ Prefab:
       propertyPath: hint
       value: "Dr\xFCcke \"E\" um zu wechseln"
       objectReference: {fileID: 0}
+    - target: {fileID: 1003234817613974, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}
   m_IsPrefabParent: 0
@@ -5618,7 +5626,7 @@ MonoBehaviour:
   three: {fileID: 1073120779}
   unlockOne: {fileID: 1534853707}
   unlockTwo: {fileID: 582888336}
-  isActive: 0
+  lockThree: {fileID: 0}
 --- !u!4 &1859106826
 Transform:
   m_ObjectHideFlags: 0

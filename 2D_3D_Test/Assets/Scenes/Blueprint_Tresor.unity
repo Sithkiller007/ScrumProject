@@ -1134,6 +1134,10 @@ Prefab:
       propertyPath: hint
       value: "Dr\xFCcke \"E\" um zu wechseln"
       objectReference: {fileID: 0}
+    - target: {fileID: 1003234817613974, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}
   m_IsPrefabParent: 0

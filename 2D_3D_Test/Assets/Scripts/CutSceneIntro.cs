@@ -13,7 +13,7 @@ public class CutSceneIntro : MonoBehaviour {
     public int nextSceneIndex;
 
 	void Start () {
-
+        GameManager.instance.cutsceneplaying = true;
     }
     void Awake()
     {
@@ -31,11 +31,12 @@ public class CutSceneIntro : MonoBehaviour {
 		if (Input.GetKeyUp(KeyCode.Escape)) //Cutscene über Escape beenden
         {
             cutScene.Stop();
-            audio.Stop();
+            //audio.Stop();
             Screen.fullScreen = false;
         }
         if (!cutScene.isPlaying)            //sobald Cutscene nicht mehr spielt lädt die nächste Szene
         {
+            GameManager.instance.cutsceneplaying = false;
             SceneManager.LoadScene(nextSceneIndex);
         }
 	}

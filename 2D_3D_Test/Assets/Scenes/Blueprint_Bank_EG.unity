@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 608952815}
   m_Layer: 0
   m_Name: ResetPoint
-  m_TagString: Untagged
+  m_TagString: Reset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1972,6 +1972,10 @@ Prefab:
         type: 2}
       propertyPath: level
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003234817613974, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 332f2eec2a1effa42af1779b1724caee, type: 2}

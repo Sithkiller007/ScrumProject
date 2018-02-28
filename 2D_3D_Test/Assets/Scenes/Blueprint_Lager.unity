@@ -312,6 +312,11 @@ Prefab:
       propertyPath: points.Array.data[2]
       value: 
       objectReference: {fileID: 1541108950}
+    - target: {fileID: 195329391942990756, guid: fb604b5f10b72154aaa6e5989e2c75b4,
+        type: 2}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb604b5f10b72154aaa6e5989e2c75b4, type: 2}
   m_IsPrefabParent: 0
@@ -1183,6 +1188,11 @@ Prefab:
       propertyPath: points.Array.data[2]
       value: 
       objectReference: {fileID: 658762680}
+    - target: {fileID: 195329391942990756, guid: fb604b5f10b72154aaa6e5989e2c75b4,
+        type: 2}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb604b5f10b72154aaa6e5989e2c75b4, type: 2}
   m_IsPrefabParent: 0
@@ -2362,7 +2372,7 @@ GameObject:
   - component: {fileID: 1502001836}
   m_Layer: 0
   m_Name: ResetPoint
-  m_TagString: Untagged
+  m_TagString: Reset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

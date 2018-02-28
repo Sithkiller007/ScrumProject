@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 82087915505609550}
   - component: {fileID: 82843063241866556}
   - component: {fileID: 82670555195573798}
+  - component: {fileID: 114312117881882554}
   m_Layer: 0
   m_Name: Hill_Sound
   m_TagString: Player
@@ -877,7 +878,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1322355028586580}
-  m_LocalRotation: {x: 0, y: 0, z: 0.5867717, w: 0.80975235}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6917714, w: 0.72211653}
   m_LocalPosition: {x: 0.83873963, y: -0.000000006513801, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1584,6 +1585,19 @@ MonoBehaviour:
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
+--- !u!114 &114312117881882554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1029015823871994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14620eaaeafb12408526ab76be775ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {x: 0, y: 0, z: 0}
+  z: 0
 --- !u!114 &114344813611960234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1763,7 +1777,6 @@ MonoBehaviour:
   isFacingLeft: 0
   spruenge: 2
   schlaege: 2
-  canMove: 1
   respawnPoint: {x: 0, y: 0, z: 0}
   fallMultiplier: 2.5
   lowJumpMultiplier: 2

@@ -27,10 +27,13 @@ public class LoadButton : MonoBehaviour {
             //lvlset.GetComponent<SaveLoadnew>().Load();
             SaveLoad.Load();
         }
-        if (GameManager.instance.menuOpen == true)
+        if (GameManager.instance)
         {
-            GameManager.instance.inGameMenu.enabled = false;
-            GameManager.instance.menuOpen = false;
+            if (GameManager.instance.menuOpen == true)
+            {
+                GameManager.instance.inGameMenu.enabled = false;
+                GameManager.instance.menuOpen = false;
+            }
         }
     }
 

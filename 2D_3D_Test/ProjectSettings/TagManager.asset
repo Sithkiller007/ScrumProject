@@ -17,6 +17,7 @@ TagManager:
   - three
   - Enemy
   - Level1Block
+  - Reset
   layers:
   - Default
   - TransparentFX

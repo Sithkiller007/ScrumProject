@@ -9,22 +9,28 @@ using UnityEngine.UI;
 public class GoToCheckpoint : MonoBehaviour
 {
     public Button startButton;
-    private Vector3 Point;
+    public Vector3 Point;
     // Use this for initialization
     void Start()
     {
+        if (GameObject.FindWithTag("Player"))
+        {
+            Point = GameObject.FindWithTag("Player").transform.position;
+        }
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
-        Point = new Vector3(0, 0.27f, 0);
     }
     void Update()
     {
-        //Point = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
+        if(GameObject.FindWithTag("Player"))
+        Point = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
     }
     void TaskOnClick()
     {
-        Point = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
+        //Point = GameObject.FindWithTag("Player").GetComponent<Respawnpoint>().respawnPoint;
+        if(GameObject.FindWithTag("Player"))
         GameObject.FindWithTag("Player").transform.position = Point;
-        Debug.Log("Zurückgesetzt an Checkpoint.");
+        GameManager.instance.CloseMenu();
+        //Debug.Log("Zurückgesetzt an Checkpoint.");
     }
 }
