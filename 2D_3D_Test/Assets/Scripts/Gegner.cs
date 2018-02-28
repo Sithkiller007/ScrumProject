@@ -7,8 +7,10 @@ public class Gegner : MonoBehaviour
     public AudioSource tod;
     private Collider coll;
     private Renderer rend;
-    private float death = 1f;
+    private float death = 3f;
     public bool tot = false;
+    bool alreadyDead = false;
+    public Animator anim;
 
     //Sound-Teil
     //public AudioClip deadClip;
@@ -17,39 +19,37 @@ public class Gegner : MonoBehaviour
 
     private void Start()
     {
-        //coll = GetComponent<Collider>();
-        rend = GetComponent<Renderer>();
+        coll = GetComponent<Collider>();
 
         //Sound-Teil
         //deadSource.clip = deadClip;
 
     }
-    void OnTriggerEnter(Collider other)
-    {
-
-        if (other.gameObject.tag == "Finish")
+    public void Nme()
+        {
+        if (!alreadyDead)
         {
             tod.Play();
+            anim.Play("death", 0, 2.5f);
             //rend.enabled = false;
-            this.enabled = false; 
-            //coll.enabled = false;
+            coll.enabled = false;
             tot = true;
+            alreadyDead = true;
         }
-    }
+        }
     private void Update()
     {
         if (tot)
         {
             death -= Time.deltaTime;
-           
             //Sound abspielen
             /*deadSource.Play();
             deadSource.loop = false;*/
         }
         if (tot && death <= 0)
         {
-            death = 1f;
             this.gameObject.SetActive(false);
+            death = 1f;
         }
     }
 }

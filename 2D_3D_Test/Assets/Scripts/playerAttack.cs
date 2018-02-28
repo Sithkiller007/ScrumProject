@@ -9,8 +9,7 @@ public class playerAttack : MonoBehaviour
     //public Animation schlag;
     private float attackTimer = 0;
     private float attackCD = 0.3f;
-    //private Renderer rend;
-    Renderer enemyren;
+
 
 
     public Collider attackTrigger;

@@ -11,7 +11,7 @@ Scrum Master
 Max Haen
 
 Story and Dialog
-Sven Berzelis
+ueSven Berzelis
 
 Voice Acting
 Derek Hill - Daniel Deuringer
@@ -44,6 +44,6 @@ Jennifer Weiﬂ
 Git-Master
 Daniel Deuringer
 
-Cut-Szenes
+Cut-Scenes
 Sven Berzellis
 

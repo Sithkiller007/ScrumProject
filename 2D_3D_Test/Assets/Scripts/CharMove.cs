@@ -272,7 +272,7 @@ public class CharMove : MonoBehaviour
             {
                 if (hit.collider.tag == "Enemy")
                 {
-                    hit.collider.gameObject.SetActive(false);
+                    hit.collider.gameObject.GetComponent<Gegner>().Nme();
                 }
             }
         }
